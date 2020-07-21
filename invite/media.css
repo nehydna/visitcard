@@ -1,0 +1,398 @@
+@media screen and (min-width: 300px) and (max-width: 380px) {
+    .header-top {
+        height: 5vh;
+    }
+    h5 {
+         font-size: 0.5em;
+    }
+    .header-scroll {
+        font-size: 0.8em;
+    }
+    .fa-angle-down {
+        font-size: 0.5em;
+    }
+     .doublu-w {
+        left: 35%;
+        font-size: 7rem;
+    }
+    .promo-icons {
+    width: 20%;
+    font-size: 1.2rem;
+    }
+    
+    .promo-flex h4 {
+        font-size: 1em;
+        line-height: 10px;
+    }
+    .promo-flex p {
+        line-height: 10px;
+    }
+    .promo-flex {
+       width: 90%; 
+    }
+    .ofer-akita,
+    .ofer-dog {
+       padding: 0; 
+    }
+   .ofer-akita h3,
+   .ofer-dog h3 {
+    font-size: 0.5em;
+       margin: 0;
+    }
+    .akita-text,
+    .dog-text {
+        width: 95%;
+    }
+    .akita-text p,
+    .dog-text p { 
+      font-size: 0.6em;  
+      line-height: 10px;
+    }
+    .blog-b {
+        left: 40%;
+        font-size: 7em;
+    }
+    .blog-bottom p {
+        text-align: justify;
+        line-height: 10px;
+    }
+    .action-right .action-icons i,
+    .action-left .action-icons i{
+        font-size: 2.3em;
+    }
+    .action-left .action-icons i {
+        left: 13%;
+    }
+    .key-left {
+        width: 40%;
+    }
+    .key-left p {
+        line-height: 10px;
+        font-size: 0.8em;
+    }
+    .key-right {
+        width: 40%;
+        align-self: center;
+    }
+      .team-header .big-t, .big-c {
+        left: 40%;
+        font-size: 7rem;
+    } 
+    .team-absolute {
+        left: 10%;
+        margin-top: -20%;
+        padding: 0; 
+        font-size: 0.5em;
+        text-align: center;
+    }
+    .team-absolute h3 {
+        font-size: 0.9em;
+    }
+    .team-absolute h4 {
+        margin: 0;
+    }    
+}
+@media screen and (min-width: 380px) and (max-width: 550px) {
+    .header-top {
+        height: 5vh;
+    }
+    h5 {
+         font-size: 0.7em;
+    }
+    .header-scroll {
+        font-size: 0.8em;
+    }
+    .fa-angle-down {
+        font-size: 0.5em;
+    }
+     .doublu-w {
+        font-size: 7rem;
+    }
+    .promo-icons {
+    width: 20%;
+    font-size: 1.3rem;
+    }
+    
+    .promo-flex h4 {
+        font-size: 1.2em;
+        line-height: 10px;
+    }
+    .promo-flex p {
+        line-height: 10px;
+    }
+    .promo-flex {
+       width: 90%; 
+    }
+    .ofer-akita,
+    .ofer-dog {
+       padding: 0; 
+    }
+   .ofer-akita h3,
+   .ofer-dog h3 {
+       margin: 0;
+    font-size: 1em;
+    }
+    .akita-text,
+    .dog-text {
+        width: 95%;
+    }
+    .akita-text p,
+    .dog-text p { 
+      font-size: 0.8em;  
+      line-height: 13px;
+    }
+    .blog-b {
+        left: 45%;
+        font-size: 7em;
+    }
+    .blog-bottom p {
+        text-align: justify;
+        line-height: 10px;
+    }
+    .action-right .action-icons i,
+    .action-left .action-icons i{
+        font-size: 2.3em;
+    }
+    .action-left .action-icons i {
+        left: 13%;
+    }
+    .key-left {
+        width: 40%;
+    }
+    .key-left p {
+        line-height: 10px;
+        font-size: 0.8em;
+    }
+    .key-right {
+        width: 40%;
+        align-self: center;
+    }
+      .team-header .big-t, .big-c {
+        left: 45%;
+        font-size: 8rem;
+    } 
+    .team-absolute {
+        left: 10%;
+        margin-top: -20%;
+        padding: 0; 
+        font-size: 0.6em;
+        text-align: center;
+    }
+    .team-absolute h3 {
+        font-size: 1em;
+    }
+    .team-absolute h4 {
+        margin: 0;
+    }  
+}
+
+@media screen and (min-width: 550px) and (max-width: 770px) {
+    .promo-icons {
+        width: 20%;
+    font-size: 2rem;
+    }
+     .header-round {
+        padding: 5%;
+    }
+    .header-top {
+        height: 6.5vw;
+    }
+     .doublu-w {
+         left: 40%;
+        font-size: 8em;
+    }
+      .ofer-akita,
+       .ofer-dog {
+       padding: 0; 
+    }
+    .ofer-akita h3,
+    .ofer-dog h3 {
+    font-size: 1.2em;
+    }
+    .akita-text,
+    .dog-text {
+      font-size: 0.7em;  
+      line-height: 10px;
+    }
+      .team-absolute {
+        left: 1%;
+        margin-top: -20%;
+        padding: 0; 
+        font-size: 0.9em;
+        text-align: center;
+    }
+    .action-left .action-icons i {
+        left: 11%;
+    } 
+    .team-absolute h3 {
+        font-size: 0.9em;
+    }
+    .team-absolute h4 {
+        margin: 0;
+    }
+    .big-c {
+        left: 42%;
+    }
+}
+@media screen and (min-width: 770px) and (max-width: 1024px){
+      .promo-icons {
+    font-size: 2rem;
+    }
+     .header-round {
+        padding: 5%;
+    }
+     .doublu-w {
+         left: 43%;
+        font-size: 9em;
+    }
+      .ofer-akita,
+       .ofer-dog {
+       padding: 1% 0; 
+    }
+    .ofer-akita h3,
+    .ofer-dog h3 {
+    font-size: 1.5em;
+    }
+    .akita-text,
+    .dog-text {
+      font-size: 0.9em;  
+      line-height: 20px;
+    }
+    .action-left .action-icons i {
+        left: 13%;
+    }
+      .team-absolute {
+        left: 2%;
+        margin-top: -20%;
+        padding: 0; 
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .team-absolute h3 {
+        font-size: 0.9em;
+    }
+    .team-absolute h4 {
+        margin: 0;
+    }
+    .big-c {
+        font-size: 9em;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    body {
+        font-size: 15px;
+    }
+    .blog-top h2 {
+        margin: 6% auto;
+    }
+    .team-absolute {
+        padding: 1% 10%;
+        font-size: 0.9em;
+    }
+    .header-two {
+        margin: 0 auto;
+        padding: 1% auto;
+    }
+    .two-double {
+        margin: 0;
+        padding: 0;
+    }
+    .doublu-w {
+        left: 43%;
+        font-size: 10rem;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+    body {
+        font-size: 15px;
+    }
+     .doublu-w {
+         top: 15%;
+        left: 43%;
+        font-size: 13rem;
+    }
+    .two-double {
+        font-size: 2.5em;
+    }
+       .promo-icons {
+    font-size: 4em;
+    }
+     .promo-flex h4 {
+        font-size: 1.6em;
+        line-height: 15px;
+    }
+    .promo-flex p {
+        font-size: 1.2em;
+        line-height: 25px;
+    }
+    .akita-text,
+    .dog-text {
+      font-size: 1em;  
+      line-height: 25px;
+    }
+      .blog-top h2 {
+        margin: 5% auto;
+    }
+    .blog p,
+    .action p,
+    .key-left p {
+        font-size: 1em;
+        line-height: 25px;
+    }
+    .team-header .big-t {
+        left: 45%;
+        font-size: 10em;
+    }
+    .big-c,
+    .blog-b { 
+        font-size: 10em;
+    
+    }
+}
+@media screen and (min-width: 1400px) {
+      body {
+        font-size: 15px;
+    }
+     .doublu-w {
+         top: 15%;
+        left: 44%;
+        font-size: 16rem;
+    }
+    .two-double {
+        font-size: 2.5em;
+    }
+       .promo-icons {
+    font-size: 4em;
+    }
+     .promo-flex h4 {
+        font-size: 1.8em;
+        line-height: 15px;
+    }
+    .promo-flex p {
+        font-size: 1.4em;
+        line-height: 30px;
+    }
+    .akita-text,
+    .dog-text {
+      font-size: 1.4em;  
+      line-height: 30px;
+    }
+      .blog-top h2 {
+        margin: 4% auto;
+    }
+    .blog p,
+    .action p,
+    .key-left p {
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+    .team-header .big-t {
+        left: 45%;
+        font-size: 13em;
+    }
+    .big-c,
+    .blog-b { 
+        font-size: 12em;
+    
+    }
+}

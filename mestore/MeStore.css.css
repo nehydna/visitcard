@@ -1,0 +1,680 @@
+html, body,
+.container {
+     margin: 0;
+    padding: 0;
+     font-size: 1vw;
+}
+body {
+    font-family: montserrat-medium;
+}
+.container {
+    background: url(image/container.png) no-repeat;
+    background-size: cover;
+}
+@font-face {
+    font-family: "montserrat-medium";
+         src: url("fonts/montserrat-medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "montserrat-extrabold";
+         src: url("fonts/montserrat-extrabold.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'montserrat-medium-italic';
+      src: url("fonts/montserrat-medium-italic.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'bebas-neue';
+      src: url("fonts/bebas-neue.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'bebas-neue-bold';
+      src: height: ("fonts/bebas-neue-bold.ttf") format("truetype");
+}
+.container,
+header,
+.promo {
+    display: flex;
+    flex-direction: column;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+.future-wrapper b,
+.pr b{
+   color: #f9236f; 
+}
+header {
+    background:url(image/headerPicks.png) no-repeat, 
+        #bae9ff;
+    background-size: cover;
+}
+.info {
+    
+    height: 6vh;
+    background: #a82353;
+    color: #fff;
+}
+.info p {
+    line-height: 6vh;
+    width: 80%; 
+    margin: auto;
+}
+.welcome {
+    height: 12vh;
+    background: rgba(227, 246, 255, 0.5);
+}
+.greeting,
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 6vh;
+    margin: auto;
+}
+.greeting {
+    border-bottom: 1px solid black;
+}
+.post {
+    width: 60%;
+}
+.MeStore {
+    font-family: montserrat-extrabold;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+.black-mail,
+.post-lang,
+.menu a{
+    font-weight: bold;
+}
+.navigation {
+    width: 50%;
+}
+.nav-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.imagin {
+    width: 100%;
+    background:  url(image/woman.png) no-repeat;
+    background-position: right bottom;
+    background-size: 45%;
+}
+.imagin-title {
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 17%;
+    margin-bottom: 19%;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+    font-family:  montserrat-extrabold;
+    font-size: 9em;
+    line-height: 68px;
+    text-transform: uppercase;
+    text-indent: 5%;
+    letter-spacing: -7px;
+}
+.header-red {
+    color: #f9236f;
+}
+.year {
+    display: inline-block;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-family:  montserrat-extrabold;
+    font-size: 3em;
+    letter-spacing: 70px;
+}
+.header-block button {
+    padding: 2% 5%;
+    background: #f9236f;
+    font-family:  montserrat-extrabold;
+    color: #fff;
+}
+.promo-wrapper {
+    width: 80%;
+    margin: auto;
+    margin-top: -3%;
+    background: #fff;
+}
+.promo-text,
+.realization,
+.future-product {
+    display: flex;
+    justify-content: space-around; 
+}
+.text-promo-one,
+.text-promo-two,
+.text-promo-three {
+    text-align: center;
+}
+
+.text-promo-one div,
+.text-promo-two div,
+.text-promo-three div{
+    width: 60%;
+    margin-top: -45%;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 3em;
+    color: #5c5c5c;
+    text-align: center;
+    padding: 20% 1%;
+}
+.text-promo-one .airplane {
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+.small {
+    display: inline-block;
+    margin-bottom: 10%;
+    font-family:  montserrat-extrabold;
+    font-size: 1.5em;
+}
+
+.realization {
+    margin-top: 5%;
+}
+.realization h2 {
+    font-family:  montserrat-extrabold;
+    font-size: 3em;
+    line-height: 25px;
+}
+.realization button {
+    margin-top: 20%;
+       padding: 2% 5%;
+    background: #f9236f;
+    font-family:  montserrat-extrabold;
+    color: #fff;
+}
+.fa-realization-awesome {
+    color: gold;
+}
+.first-realisation {
+    background: url(image/bluehair.png) no-repeat,
+        #d7eff9;
+    background-size: 70% 100%;
+    background-position: right;
+}
+.second-realisation {
+    background: url(image/prBeard.png) no-repeat,
+ #d7eff9;
+    background-size: 70% 100%;
+    background-position: right;
+}
+.realisation-text {
+    width: 30%;
+    margin: 5%;
+}
+.future-product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+    
+}
+.future-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.future-awesome {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 3vh;
+    bottom: -25%;
+    padding: 3% 0;
+    text-align: center;
+    background: #fff;
+}
+.fa-future-one,
+.fa-future-two{
+    display: inline-block;
+    padding: 0.5%;
+    width: 1%;
+    border-radius: 50%;
+    
+}
+.fa-future-one a,
+.fa-future-two a {
+    color: #fff;
+}
+.fa-future-one {
+    background: #f9236f;
+}
+.fa-future-two {
+    background: #cacaca;
+}
+.news {
+    padding: 5% 0;
+    text-align: center;
+    background: rgba(216, 216, 216, 0.5);
+}
+
+ .news h3 {
+      font-size: 1.5em;  
+    }
+.news-wrapper {
+    display: flex;
+    width: 80%;
+    margin: 5% auto;
+}
+.news-wrapper div {
+    width: 30%;
+    margin: auto;
+    padding: 2% 0;
+    background: #fff;
+}
+.news-wrapper h4 {
+    font-size: 1.2em;
+}
+.news-text-normal {
+    padding: 5%;
+    text-align: justify;
+}
+.fa-news {
+    color: #f92348;
+}
+.news-wrapper button {
+    padding: 2% 5%;
+    background: #f9236f;
+    font-family:  montserrat-extrabold;
+    color: #fff;
+}
+.pr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    text-align: center;
+}
+.pr-brands {
+    width: 30%;
+}
+.pr-all {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 2;
+    align-items: center;
+    line-height: 25px;
+    border-bottom: 1px solid lightgray;
+}
+ .pr-all img {
+        width: 40%;
+    }
+.pr-title-wrapper {
+    width: 20%;
+    margin: 2% auto;
+    padding: 2%;
+    background: url(image/prPicks.png) no-repeat,
+        #f9236f;
+    background-size: cover;
+    background-position: center;   
+}
+.header-title-rapper {
+    margin: auto;
+    border: 10px solid #fff;
+    color: #fff;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.pr-title span {
+    display: inline-block;
+    line-height: 75px;
+}
+.pr-title span:nth-of-type(2) {
+    font-size: 1.7em;
+    transform: scaleY(2);
+}
+.pr-title span:nth-of-type(3) {
+    font-size: 0.7em;
+     transform: scaleY(2);
+}
+.pr-title span:nth-of-type(4) {
+    font-size: 1.6em;
+    transform: scaleY(1.3);
+}
+.pr-title span:nth-of-type(5) {
+    font-size: 1.6em;
+    text-decoration: overline;
+    transform: scaleY(1.5);
+}
+.pr-not-all {
+    width: 100%;
+    margin: 5% auto;
+    text-align: center;
+}
+.brand {
+    width: 80%;
+    margin: 5% auto;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5% 0;
+    background: linear-gradient(#f5236f, #ea2347);
+    color: #fff;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+}
+.about-cmpany {
+    width: 20%;
+}
+.under-nav {
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (min-width: 1600px) {
+    h1 {
+    font-size: 8em;
+    line-height: 120px;
+}
+.year {
+    letter-spacing: 100px;
+}
+    .realization h2 {
+    line-height: 45px;
+}
+    .pr-all {
+        height: 14vh;
+    }
+    .pr-title span {
+        line-height: 120px;   
+    }
+    .pr-title span:nth-of-type(2) {
+    font-size: 1.5em;
+    transform: scaleY(2);
+}
+.pr-title span:nth-of-type(3) {
+    font-size: 0.7em;
+     transform: scaleY(2);
+}
+.pr-title span:nth-of-type(4) {
+    font-size: 1.2em;
+    transform: scaleY(1.3);
+}
+.pr-title span:nth-of-type(5) {
+    font-size: 1.1em;
+    text-decoration: overline;
+    transform: scaleY(1.5);
+}
+}
+@media screen and (max-width: 1600px) {
+    h1 {
+    font-size: 8em;
+    line-height: 90px;
+}
+.year {
+    letter-spacing: 100px;
+}
+    .realization h2 {
+    line-height: 35px;
+}
+    .pr-all {
+        height: 14vh;
+    }
+    .pr-title span {
+        line-height: 90px;   
+    }
+    .pr-title span:nth-of-type(2) {
+    font-size: 1.5em;
+    transform: scaleY(2);
+}
+.pr-title span:nth-of-type(3) {
+    font-size: 0.7em;
+     transform: scaleY(2);
+}
+.pr-title span:nth-of-type(4) {
+    font-size: 1.2em;
+    transform: scaleY(1.3);
+}
+.pr-title span:nth-of-type(5) {
+    font-size: 1.1em;
+    text-decoration: overline;
+    transform: scaleY(1.5);
+}
+}
+@media screen and (max-width: 1400px) {
+    h1 {
+    font-size: 9em;
+    line-height: 90px;
+}
+.year {
+    letter-spacing: 100px;
+}
+    .realization h2 {
+    line-height: 35px;
+}
+    .pr-all {
+        height: 14vh;
+    }
+    .pr-title span {
+        line-height: 80px;   
+    }
+    .pr-title span:nth-of-type(2) {
+    font-size: 1.5em;
+    transform: scaleY(2);
+}
+.pr-title span:nth-of-type(3) {
+    font-size: 0.7em;
+     transform: scaleY(2);
+}
+.pr-title span:nth-of-type(4) {
+    font-size: 1.2em;
+    transform: scaleY(1.3);
+}
+.pr-title span:nth-of-type(5) {
+    font-size: 1.1em;
+    text-decoration: overline;
+    transform: scaleY(1.5);
+}
+}
+@media screen and (max-width: 1200px) {
+    h1 {
+    font-size: 9em;
+    line-height: 75px;
+}
+.year {
+    letter-spacing: 80px;
+}
+    .realization h2 {
+    line-height: 35px;
+}
+    .pr-all {
+        height: 15vh;
+    }
+    .pr-title span {
+        line-height: 70px;   
+    }
+    .pr-title span:nth-of-type(2) {
+    font-size: 1.5em;
+    transform: scaleY(2);
+}
+.pr-title span:nth-of-type(3) {
+    font-size: 0.7em;
+     transform: scaleY(2);
+}
+.pr-title span:nth-of-type(4) {
+    font-size: 1.2em;
+    transform: scaleY(1.3);
+}
+.pr-title span:nth-of-type(5) {
+    font-size: 1.1em;
+    text-decoration: overline;
+    transform: scaleY(1.5);
+}
+}
+@media screen and (max-width: 1024px) {
+    h1 {
+    font-size: 9em;
+    line-height: 65px;
+}
+.year {
+    letter-spacing: 60px;
+}
+    .realization h2 {
+    line-height: 20px;
+}
+    .pr-title span {
+        line-height: 60px;   
+    }
+    .pr-title span:nth-of-type(2) {
+    font-size: 1.5em;
+    transform: scaleY(2);
+}
+.pr-title span:nth-of-type(3) {
+    font-size: 0.7em;
+     transform: scaleY(2);
+}
+.pr-title span:nth-of-type(4) {
+    font-size: 1.2em;
+    transform: scaleY(1.3);
+}
+.pr-title span:nth-of-type(5) {
+    font-size: 1.1em;
+    text-decoration: overline;
+    transform: scaleY(1.5);
+}
+}
+@media screen and (max-width: 820px) {
+    h1 {
+    font-size: 9em;
+    line-height: 55px;
+}
+.year {
+    letter-spacing: 60px;
+}
+    .realization h2 {
+    line-height: 20px;
+}
+    .pr-all {
+        line-height: normal;
+    }
+    .pr-all img {
+        width: 40%;
+    }
+    .pr-title span {
+        font-size: 0.8em;
+        line-height: 50px;   
+    }
+    .pr-title span:nth-of-type(2) {
+    font-size: 1.5em;
+    transform: scaleY(2);
+}
+.pr-title span:nth-of-type(3) {
+    font-size: 0.7em;
+     transform: scaleY(2);
+}
+.pr-title span:nth-of-type(4) {
+    font-size: 1.2em;
+    transform: scaleY(1.3);
+}
+.pr-title span:nth-of-type(5) {
+    font-size: 1.1em;
+    text-decoration: overline;
+    transform: scaleY(1.5);
+}
+}
+@media screen and (max-width: 700px) {
+    h1 {
+    font-size: 9em;
+    line-height: 55px;
+}
+.year {
+    letter-spacing: 50px;
+}
+    .realization h2 {
+    line-height: 20px;
+}
+    .fa-future-one,
+.fa-future-two{
+    width: 2%;    
+}
+    .pr-title span {
+        font-size: 0.8em;
+        line-height: 40px;   
+    }
+    .pr-title span:nth-of-type(2) {
+    font-size: 1.5em;
+    transform: scaleY(2);
+}
+.pr-title span:nth-of-type(3) {
+    font-size: 0.7em;
+     transform: scaleY(2);
+}
+.pr-title span:nth-of-type(4) {
+    font-size: 1.2em;
+    transform: scaleY(1.3);
+}
+.pr-title span:nth-of-type(5) {
+    font-size: 1.1em;
+    text-decoration: overline;
+    transform: scaleY(1.5);
+}
+}
+@media screen and (max-width: 550px) {
+    h1 {
+    font-size: 9em;
+    line-height: 40px;
+}
+.year {
+    letter-spacing: 30px;
+}
+    .realization h2 {
+    line-height: 15px;
+}
+    .fa-future-one,
+.fa-future-two{
+    width: 3%;
+    font-size: 2em;
+}
+    .pr-title-wrapper {
+        display: none;
+    }
+    .pr-brands {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 420px) {
+    h1 {
+    font-size: 8em;
+    letter-spacing: -3px;
+    line-height: 30px;
+}
+.year {
+    letter-spacing: 20px;
+}
+    .realization h2 {
+    line-height: 15px;
+}
+    .fa-future-one,
+.fa-future-two{
+    width: 4%;
+    font-size: 3em;
+    
+}
+    .pr-title-wrapper {
+        display: none;
+    }
+}

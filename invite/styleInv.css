@@ -1,0 +1,941 @@
+@font-face{
+font-family: 'Gotham-Black';
+src: url("fonts/Gotham/Gotham-Black.otf") format('opentype');
+}
+
+@font-face{
+font-family: 'Gotham-Bold';
+src: url("fonts/Gotham/Gotham-Bold.ttf") format('truetype');
+}
+
+@font-face{
+font-family: 'MyriadPro-Black';
+src: url("fonts/MyriadPro-Black.ttf") format('truetype');
+}
+
+@font-face{
+font-family: 'Roboto-Bold';
+src: url("fonts/RobotoBold.ttf") format('truetype');
+}
+
+
+html, body {
+    color: #fff;
+    font-family: "Gotham", "Myriad Pro";
+    font-size: 12px;
+}
+body {
+    height: 100%;
+}
+a {
+    color: #fff;
+    margin: 2%;
+    text-decoration: none;
+    font-size: 1.1vw;
+}
+a:hover: {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 3px solid #11749e;
+}
+header,
+.header-top,
+main,
+.promo,
+.promo-flex,
+.ofer,
+.ofer-top,
+.ofer-bottom,
+.blog,
+.blog-top,
+.blog-bottom,
+.action,
+.key,
+.team,
+.team-bottom,
+.form-register {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+header {
+    flex-direction: column; 
+    background:url(img/masterheader.png) no-repeat;
+    background-size: 100% 100%;
+}
+.header-top {
+    justify-content: space-around;
+    width: 100%;
+    height: 11vh;
+    border-bottom: 1px solid #757575;
+}
+.logo {
+    width: 30%;
+     padding-top: 2%;
+    text-align: center;
+}
+.logotip{
+   display: inline-block;
+    padding: 3% 1%;
+    font-size: 2.1vw;
+    background-color: #11749e;
+    box-shadow: 5px -5px 0 lightgray;
+    font-weight: bold;
+}
+
+.navigation, 
+.header-icon {
+    text-align: center;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-basis: 70%;
+}
+.navigation a {
+    display: inline-block;
+}
+.bigcaption {
+    max-width: 60%;
+    margin: auto;
+    text-align: center;
+}
+h1 {
+    padding-top: 20%;
+    margin: auto;
+     font-size: 7vw; 
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h5 {
+    padding-left: 2%;
+    margin: auto;
+    margin-bottom: 12%;
+    font-size: 1.3em;
+    color: #11749e;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.header-scroll {
+    display: inline-block;
+}
+.header-round {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    padding: 3%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 30%;
+    font-size: 0.9em;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.fa-angle-down {
+    display: inline-block;
+    position: absolute;
+    top: 43%;
+    left: 43%;
+}
+main {
+    flex-direction: column;
+}
+
+.promo {
+    flex-direction: column;
+    position: relative;
+    margin-top: -10%;
+    background-color: #000000;
+}
+.promo::after {
+    position:absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height:100%;
+    background-color: rgba(17, 116, 158, 0.8);
+    z-index: 0;
+    
+}
+.header-two {
+    padding: 10% 5%;
+    text-align: center;
+}
+.two-double {
+    position: relative;
+    font-size: 2em; 
+    text-transform: uppercase;
+    z-index: 3;
+    color: #fff;
+}
+.doublu-w {
+    position: absolute;
+    top: 9%;
+    left: 35vw;
+    font-size: 10em;
+    font-weight: bold;
+    transform: scaleY(1.2);
+    z-index: 0;
+}
+.promo-flex {
+    flex-direction: row;
+    justify-content: center;
+    width: 78%;
+    margin: auto;
+}
+.feature-one,
+.feature-two,
+.feature-three,
+.feature-four {
+    position: relative;
+    z-index: 3;
+    width: 35%;
+    margin-bottom: 10%;
+    padding: 2%;
+    text-align: justify;
+    font-size: 0.8em;
+    line-height: 15px;
+}
+.promo-flex h4 {
+    padding: 0 15%;
+    margin-bottom: 10%;
+    font-size: 1.3rem;
+    font-weight: bold;   
+}
+.promo-icons {
+    width: 15%;
+    padding: 15%;
+    margin: auto;
+    margin-bottom: 10%;
+    border-radius: 50%;
+    background-color: #2e85aa;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.ofer,
+.blog {
+    flex-direction: column;
+}
+.ofer-top {
+    background-color: #222; 
+}
+.ofer-bottom {
+    background-color: #f3f3f3;  
+}
+.ofer-akita,
+.ofer-dog {
+    width: 50%;
+    padding: 5% 0;
+    box-sizing: border-box;
+    line-height: 25px;
+}
+.ofer-computer {
+    width: 50%;
+}
+.akita-text {
+    width: 70%;
+    margin: auto;
+}
+
+.ofer-akita h3,
+.ofer-dog h3 {
+    margin: 8% 0;
+    margin-top: 3%;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.ofer-akita data {
+    font-size: 0.8em;
+}
+.dog-text {
+    width: 70%;
+    margin: auto;
+    color: #222;
+}
+.blog {
+    padding: 5% 0;
+    background-color: #fff;
+    color: #222;
+    box-sizing: border-box;
+}    
+.blog h3 {
+    margin: 8% auto;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #11749e;
+}
+.blog-top  {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+.blog-top h2 {
+    position: relative;
+    margin: 11% auto;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    z-index: 3;
+}
+.blog-b {
+    position: absolute;
+    left: 46%;
+    font-size: 10em;
+    font-weight: bold;
+    color: #e2e2e2;
+    transform: scaleY(1.3);
+}
+.blog-top h4 {
+     font-size: 1.5em;
+    margin: 6% auto;
+}
+.blog-bottom {
+    width: 90%;
+    margin: auto;
+    font-size: 0.7em;
+    line-height: 15px;
+}
+.fresh-one,
+.fresh-two,
+.fresh-three,
+.fresh-four {
+    max-width: 25%;
+    padding: 1%;
+    text-align: center;
+}
+.action {
+    justify-content: space-around;
+    padding: 5% 10%;
+    background-color: #11749e;
+}
+
+.action-right,
+.action-left {
+    max-width: 35%;
+    padding-top: 5%;
+    padding-left: 8%;
+    font-size: 0.8em;
+    text-align: justify;
+    line-height: 13px;
+}
+.action-right .action-icons i {
+    display: block;
+    position: absolute;
+    left: 51%;
+    font-size: 4.8em;
+}
+
+.action-left .action-icons i {
+     display: block;
+    position: absolute;
+    left: 13%;
+    font-size: 4.8em;
+}
+
+
+.key {
+    justify-content: space-around;
+    background: url(img/blackpencil.png) no-repeat;
+    background-size: cover;
+}
+.key-left {
+    width: 35%;
+    margin: 7% auto;
+    padding: 10%;
+}
+.key-left h3,
+.key-left p {
+  margin: 1% auto;  
+}
+.key-left h3 {
+    width: 30%;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+.key-left p {
+    max-width: 80%;
+    margin-bottom: 10%;
+    font-size: 0.8em;
+    line-height: 15px;
+    text-align: justify; 
+}
+.key-blue {
+    max-width: 76%;
+    margin: 3% 10%;
+    padding: 2% 1%;
+    background-color: #11749e;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+.key-one {
+    width: 65%;
+}
+.key-two {
+    width: 70%;
+}
+.key-right {
+    width: 30%;
+    align-self: center;
+    padding-left: 3%;
+}
+.team { 
+    flex-direction: column;
+    background-color: #fff;
+}
+.team-top {
+    color: #222222;
+    margin: 7% auto;
+    margin-bottom: 4%;
+}
+
+.team-header h2 {
+    position: relative;
+    margin: 5% auto;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 3;
+}
+.team-header h4 {
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 0;
+    font-size: 1.3em;
+}
+ .team-header .big-t {
+    position: absolute;
+    left: 45%;
+     margin-top: -5%;
+    font-size: 10em;
+    font-weight: bold;
+    color: #e2e2e2;
+    transform: scaleY(1.2);
+     z-index: 1;
+
+}
+.team-bottom {
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+.team-picture {
+    position: relative;
+}
+.team-absolute {
+    margin: 0 5%;
+    margin-top: -20%;
+    padding: 3% 13%;
+    position: absolute;
+    background-color: #fff;
+}
+.team-absolute h3 {
+    font-size: 1.1em;
+    color: #11749e;
+    font-weight: bold;
+}
+.team-absolute h4{
+    color: #222;
+    text-align: center;
+}
+.form-register {
+    flex-direction: column;
+    background-image: url(img/balckfooter.png);
+    background-size: 100% 100%;
+}
+.form-top {
+     position: relative;
+}
+.form-top h2 {
+     position: relative;
+    margin: 12% auto 6%;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 13;
+}
+.big-c {
+    position: absolute;
+    top: 30%;
+    left: 46%;
+    font-family: 'RobotoBold', Arial;
+    font-size: 10em;
+    font-weight: bold;
+    color: #5d5d5b;
+    transform: scaleY(1.2);
+    z-index: 0;
+}
+.form-bottom {
+    max-width: 80%;
+    margin: 5% auto;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+}
+input[type="text"],
+textarea{
+    
+    margin: 2% auto;
+    color: #fff;
+    background: transparent;
+    border-left: transparent;
+    outline: none;
+}
+input[type="text"] {
+     width: 22%;
+     height: 2vw;
+    padding: 5px 2%;
+}
+textarea {
+    width: 90%;
+    padding: 1%;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 690px) {
+    input[type="text"] {
+        margin: 2% auto;
+        padding: 5px 20%;
+    }
+}
+button[type="submit"] {
+    margin: 5% 40%;
+    padding: 1% 4%;
+    background-color: #11749e;
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid #11749e;
+}
+::-webkit-input-placeholder {color:#fff;}
+::-moz-placeholder          {color:#fff;}
+:-moz-placeholder           {color:#fff;}
+:-ms-input-placeholder      {color:#fff;}
+
+.invite-footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+}
+.footer-invite {
+    width: 100%;
+     margin: 0;
+    padding: 0;
+}
+
+.copyright {
+    display: block;
+    max-width: 30%;
+    float: left;
+    font-size: 1.3vw;
+}
+.footer-bee img {
+    max-width: 40%;
+    float: right;
+   font-size: 1.2em;
+}
+    
+@media screen and (min-width: 300px) and (max-width: 380px) {
+    .header-top {
+        height: 5vh;
+    }
+    h5 {
+         font-size: 0.5em;
+    }
+    .header-scroll {
+        font-size: 0.8em;
+    }
+    .fa-angle-down {
+        font-size: 0.5em;
+    }
+     .doublu-w {
+        left: 35%;
+        font-size: 7rem;
+    }
+    .promo-icons {
+    width: 20%;
+    font-size: 1.2rem;
+    }
+    
+    .promo-flex h4 {
+        font-size: 1em;
+        line-height: 10px;
+    }
+    .promo-flex p {
+        line-height: 10px;
+    }
+    .promo-flex {
+       width: 90%; 
+    }
+    .ofer-akita,
+    .ofer-dog {
+       padding: 0; 
+    }
+   .ofer-akita h3,
+   .ofer-dog h3 {
+    font-size: 0.5em;
+       margin: 0;
+    }
+    .akita-text,
+    .dog-text {
+        width: 95%;
+    }
+    .akita-text p,
+    .dog-text p { 
+      font-size: 0.6em;  
+      line-height: 10px;
+    }
+    .blog-b {
+        left: 40%;
+        font-size: 7em;
+    }
+    .blog-bottom p {
+        text-align: justify;
+        line-height: 10px;
+    }
+    .action-right .action-icons i,
+    .action-left .action-icons i{
+        font-size: 2.3em;
+    }
+    .action-left .action-icons i {
+        left: 13%;
+    }
+    .key-left {
+        width: 40%;
+    }
+    .key-left p {
+        line-height: 10px;
+        font-size: 0.8em;
+    }
+    .key-right {
+        width: 40%;
+        align-self: center;
+    }
+      .team-header .big-t, .big-c {
+        left: 40%;
+        font-size: 7rem;
+    } 
+    .team-absolute {
+        left: 10%;
+        margin-top: -20%;
+        padding: 0; 
+        font-size: 0.5em;
+        text-align: center;
+    }
+    .team-absolute h3 {
+        font-size: 0.9em;
+    }
+    .team-absolute h4 {
+        margin: 0;
+    }    
+}
+@media screen and (min-width: 380px) and (max-width: 550px) {
+    .header-top {
+        height: 5vh;
+    }
+    h5 {
+         font-size: 0.7em;
+    }
+    .header-scroll {
+        font-size: 0.8em;
+    }
+    .fa-angle-down {
+        font-size: 0.5em;
+    }
+     .doublu-w {
+        font-size: 7rem;
+    }
+    .promo-icons {
+    width: 20%;
+    font-size: 1.3rem;
+    }
+    
+    .promo-flex h4 {
+        font-size: 1.2em;
+        line-height: 10px;
+    }
+    .promo-flex p {
+        line-height: 10px;
+    }
+    .promo-flex {
+       width: 90%; 
+    }
+    .ofer-akita,
+    .ofer-dog {
+       padding: 0; 
+    }
+   .ofer-akita h3,
+   .ofer-dog h3 {
+       margin: 0;
+    font-size: 1em;
+    }
+    .akita-text,
+    .dog-text {
+        width: 95%;
+    }
+    .akita-text p,
+    .dog-text p { 
+      font-size: 0.8em;  
+      line-height: 13px;
+    }
+    .blog-b {
+        left: 45%;
+        font-size: 7em;
+    }
+    .blog-bottom p {
+        text-align: justify;
+        line-height: 10px;
+    }
+    .action-right .action-icons i,
+    .action-left .action-icons i{
+        font-size: 2.3em;
+    }
+    .action-left .action-icons i {
+        left: 13%;
+    }
+    .key-left {
+        width: 40%;
+    }
+    .key-left p {
+        line-height: 10px;
+        font-size: 0.8em;
+    }
+    .key-right {
+        width: 40%;
+        align-self: center;
+    }
+      .team-header .big-t, .big-c {
+        left: 45%;
+        font-size: 8rem;
+    } 
+    .team-absolute {
+        left: 10%;
+        margin-top: -20%;
+        padding: 0; 
+        font-size: 0.6em;
+        text-align: center;
+    }
+    .team-absolute h3 {
+        font-size: 1em;
+    }
+    .team-absolute h4 {
+        margin: 0;
+    }  
+}
+
+@media screen and (min-width: 550px) and (max-width: 770px) {
+    .promo-icons {
+        width: 20%;
+    font-size: 2rem;
+    }
+     .header-round {
+        padding: 5%;
+    }
+    .header-top {
+        height: 6.5vw;
+    }
+     .doublu-w {
+         left: 40%;
+        font-size: 8em;
+    }
+      .ofer-akita,
+       .ofer-dog {
+       padding: 0; 
+    }
+    .ofer-akita h3,
+    .ofer-dog h3 {
+    font-size: 1.2em;
+    }
+    .akita-text,
+    .dog-text {
+      font-size: 0.7em;  
+      line-height: 10px;
+    }
+      .team-absolute {
+        left: 1%;
+        margin-top: -20%;
+        padding: 0; 
+        font-size: 0.9em;
+        text-align: center;
+    }
+    .action-left .action-icons i {
+        left: 11%;
+    } 
+    .team-absolute h3 {
+        font-size: 0.9em;
+    }
+    .team-absolute h4 {
+        margin: 0;
+    }
+    .big-c {
+        left: 42%;
+    }
+}
+@media screen and (min-width: 770px) and (max-width: 1024px){
+      .promo-icons {
+    font-size: 2rem;
+    }
+     .header-round {
+        padding: 5%;
+    }
+     .doublu-w {
+         left: 43%;
+        font-size: 9em;
+    }
+      .ofer-akita,
+       .ofer-dog {
+       padding: 1% 0; 
+    }
+    .ofer-akita h3,
+    .ofer-dog h3 {
+    font-size: 1.5em;
+    }
+    .akita-text,
+    .dog-text {
+      font-size: 0.9em;  
+      line-height: 20px;
+    }
+    .action-left .action-icons i {
+        left: 13%;
+    }
+      .team-absolute {
+        left: 2%;
+        margin-top: -20%;
+        padding: 0; 
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .team-absolute h3 {
+        font-size: 0.9em;
+    }
+    .team-absolute h4 {
+        margin: 0;
+    }
+    .big-c {
+        font-size: 9em;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    body {
+        font-size: 15px;
+    }
+    .blog-top h2 {
+        margin: 6% auto;
+    }
+    .team-absolute {
+        padding: 1% 10%;
+        font-size: 0.9em;
+    }
+    .header-two {
+        margin: 0 auto;
+        padding: 1% auto;
+    }
+    .two-double {
+        margin: 0;
+        padding: 0;
+    }
+    .doublu-w {
+        left: 43%;
+        font-size: 10rem;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+    body {
+        font-size: 15px;
+    }
+     .doublu-w {
+         top: 15%;
+        left: 43%;
+        font-size: 13rem;
+    }
+    .two-double {
+        font-size: 2.5em;
+    }
+       .promo-icons {
+    font-size: 4em;
+    }
+     .promo-flex h4 {
+        font-size: 1.6em;
+        line-height: 15px;
+    }
+    .promo-flex p {
+        font-size: 1.2em;
+        line-height: 25px;
+    }
+    .akita-text,
+    .dog-text {
+      font-size: 1em;  
+      line-height: 25px;
+    }
+      .blog-top h2 {
+        margin: 5% auto;
+    }
+    .blog p,
+    .action p,
+    .key-left p {
+        font-size: 1em;
+        line-height: 25px;
+    }
+    .team-header .big-t {
+        left: 45%;
+        font-size: 10em;
+    }
+    .big-c,
+    .blog-b { 
+        font-size: 10em;
+    
+    }
+}
+@media screen and (min-width: 1400px) {
+      body {
+        font-size: 15px;
+    }
+     .doublu-w {
+         top: 15%;
+        left: 44%;
+        font-size: 16rem;
+    }
+    .two-double {
+        font-size: 2.5em;
+    }
+       .promo-icons {
+    font-size: 4em;
+    }
+     .promo-flex h4 {
+        font-size: 1.8em;
+        line-height: 15px;
+    }
+    .promo-flex p {
+        font-size: 1.4em;
+        line-height: 30px;
+    }
+    .akita-text,
+    .dog-text {
+      font-size: 1.4em;  
+      line-height: 30px;
+    }
+      .blog-top h2 {
+        margin: 4% auto;
+    }
+    .blog p,
+    .action p,
+    .key-left p {
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+    .team-header .big-t {
+        left: 45%;
+        font-size: 13em;
+    }
+    .big-c,
+    .blog-b { 
+        font-size: 12em;
+    
+    }
+}

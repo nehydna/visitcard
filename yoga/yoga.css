@@ -1,0 +1,1258 @@
+html, body, .conteiner, ul {
+    margin: 0; 
+    padding: 0;
+    font-family: 'Fivosanslight';
+    font-size: 18px;
+    color: #656565;
+    line-height: 40px;
+}
+@font-face {
+    font-family: "Fivosansblack";
+         src: url("fonts/Fivosansblack.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Fivosansheavy";
+         src: url("fonts/Fivosansheavy.woff") format("truetype");
+}
+
+@font-face {
+    font-family: "Fivosansblackoblique";
+         src: url("fonts/Fivosansblackoblique.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Fivosansbold';
+      src: url("fonts/Fivosansbold.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Fivosanslight';
+      src: url("fonts/Fivosanslight.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Fivosansmedium';
+      src: height: ("fonts/Fivosansmedium.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'FivoSansRegular';
+      src: height: ("fonts/FivoSansRegular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "gilda-display";
+         src: url("fonts/gilda-display.ttf") format("truetype");
+}
+.conteiner,
+header,
+main,
+footer{
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #89bdd0;
+}
+h1 {
+    padding-top: 50px;
+    line-height: 50px;
+    color: #3b3838;
+}
+h1, 
+h2 {
+    font-family: Fivosansbold;
+    font-size: 2.7em;
+}
+
+h3:not(.small-underhead) {
+    font-size: 1.3em;
+    font-family: Fivosansbold;
+}
+img {
+    width: 100%;
+}
+li::before {
+    border: none;
+}
+
+header {
+    background: url(img/forHeader.png) no-repeat;
+    background-size: 100% 100%;
+}
+.header-section {
+    display: flex;
+    justify-content: space-around;
+     height: 5vw;
+    padding: 2% 0;
+}
+.logo {
+    align-self: center;
+    margin: 0 11%;
+    font-family: Fivosansheavy;
+    font-size: 2.2em;
+    color: #ff6a6d;
+}
+.navigation {
+    align-self: center;
+    text-align: right;
+    margin-left: 5%;
+}
+.header-navigation {
+    word-spacing: 70px;
+}
+.header-navigation a {
+    display: inline-block;
+    word-spacing: 5px;
+    line-height: 36px;
+}
+.header-navigation a:first-child {
+    color: #ff6a6d;
+}
+.navigation-button {
+    align-self: center;
+    width: 13%;
+}
+.navigation-submit {
+    margin-right: 7%;
+    width: 70%;
+    height: 60px;
+    background: #ff6a6d;
+    font-size: 1em;
+    color: #fff;
+    border-radius: 50px;
+    outline: none;
+    
+}
+.header-main {
+    width: 29%;
+    margin: 0 22%;
+    margin-bottom: 25%;
+    line-height: 40px;
+}
+.header-main p {
+    width: 80%;
+    color: #89a3a2;
+}
+.button-service,
+.button-sign {
+    margin: 3% 0;
+    padding: 5% 14%;
+    border-radius: 40px;
+    outline: none;
+    font-size: 1.1em;
+    outline: none;
+}
+.button-service {
+    background: #ff6a6d;
+    color: #fff;
+}
+.button-sign {
+    background-color: transparent;
+    border: 2px solid #ff6a6d;
+    color: #ff6a6d;
+}
+.promo,
+.article-text,
+.informing,
+.benefits-block {
+    width: 75%;
+    margin: auto;
+}
+.promo {
+    text-align: center;
+}
+.small-underhead {
+    width: 50%;
+    margin: 2% auto;
+    line-height: 40px;
+}
+.promo-block {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% auto;
+}
+.promo-block div {
+    width: 15%;
+    text-align: center;
+}
+.article {
+    width: 100%;
+    margin: 15% 0;
+    background: url(img/articleBranch.png) no-repeat;
+    background-size: 10%;
+    background-position: 0 80%;
+}
+.article-text {
+    display: flex;
+    justify-content: space-around;
+}
+.article-img{
+    width: 40%;
+    align-self: center;
+}
+.article-text ul {
+    width: 35%;
+    list-style: none;
+}
+.article-text li {
+    position: relative;
+}
+.article-text li p {
+       color: #89a3a2;
+}
+.article-text li::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    left: -10%;
+    background: url(img/markList.png) no-repeat;
+}
+.informing,
+.benefits-block {
+    display: flex;
+    justify-content: space-around;
+}
+.informing-text,
+.benefits-text {
+    width: 45%;
+    margin: auto;
+}
+.informing-text h2 {
+    width: 80%;
+    margin: 15% auto;
+    line-height: 67px;
+}
+.informing-text p {
+    width: 60%;
+    text-align: justify;
+    margin: 5% auto;
+}
+ .informing-image {
+        width: 50%;
+        align-self: center;
+    }
+.benefits {
+    width: 100%;
+    background: url(img/SmartObject.png) no-repeat,
+    url(img/benefitBranch.png) no-repeat,
+    url(img/SmartObject2.png) no-repeat;
+    background-position: 0 0,
+     100% 18%,
+    100% 0;
+}
+.benefits-block {
+    margin: 15% auto;
+}
+.benefits-image {
+    width: 40%;
+    align-self: center;
+}
+.benefits-text {
+    width: 45%;
+    margin: auto;
+    text-align: justify;
+}
+.benefits-text h2 {
+    line-height: 67px;
+}
+.benefits-text p {
+    width: 85%;
+    margin-left: auto;
+    text-indent: 10%;
+}
+footer {
+    width: 100%;
+   background: 
+    url(img/footerEllipce.png) no-repeat,
+    url(img/shadowFooter.png) no-repeat,
+    url(img/articleBranch.png) no-repeat,
+    url(img/benefitBranch.png) no-repeat,
+       #68dffd; 
+    background-position: left, center, left, right;
+    border-radius: 50% 50% 0 0;
+}
+.purchases {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    height: 720px;
+    margin: auto;
+}
+.purchases h4 {
+    font-family: Fivosansbold;
+    font-size: 1.2em;
+    text-align: center;
+}
+.purchases-block1,
+.purchases-block2,
+.purchases-block3 {
+    width: 30%;
+    background: #fffefe;
+    border-radius: 30px;
+    
+}
+.best-seller {
+    width: auto;
+    padding: 5%;
+    font-family: Fivosansbold;
+    font-size: 1.6em;
+    background: #ff6a6d;
+    color: #fff;
+    border-radius: 30px 30px 0 0;
+    text-align: center;
+}
+.purchases-block1,
+.purchases-block3 {
+    margin-top: 5%;
+}
+.purchases-block2 {
+    margin-bottom:  -4%;
+}
+.purchases-block1,
+.purchases-block2{
+    box-shadow: -50px 0 50px rgba(255, 106, 109, 0.2);
+}
+.purchases ul {
+    width: 80%;
+    margin: 10% auto;
+}
+.purchases li {
+    position: relative;
+    width: 60%;
+    margin: 15% auto;
+    line-height: 30px;
+}
+.purchases li::before {
+    position: absolute;
+    content: "";
+    left: -35%;
+    width: 50px;
+    height: 50px;
+    background: url(img/mrkBlue.png) no-repeat;
+    background-size: 100%;
+}
+.purchases-block2 li::before {
+    position: absolute;
+    content: "";
+    left: -35%;
+    width: 50px;
+    height: 50px;
+    background: url(img/markPink.png) no-repeat;
+    background-size: 100%;
+}
+.big-text {
+    width: 80%;
+    margin: 20% auto;
+    text-align: center;
+}
+.big-number {
+    display: inline-block;
+    font-size: 4em;
+}
+sup {
+    font-size: 48px;
+}
+.purchases button {
+    margin-top: 25%;
+    padding: 10% 15%;
+    border-radius: 40px;
+    color: #fff;
+    outline: none;
+}
+.pink {
+    background: #ff6a6d;
+}
+.lightblue {
+    background: linear-gradient(45deg, #5fcef5, #83e4fc);
+}
+.blue {
+    background: linear-gradient(45deg, #21acdd, #9ddae9);
+}
+footer li {
+    list-style: none;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    margin: 15% auto 0;
+    padding: 5% 0;
+    background: rgba(193, 242, 254, 0.4);
+    border-radius: 100px 100px 0 0;
+}
+.footer div {
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1em;
+}
+.footer div p,
+.footer div ul {
+    font-size: 0.9em;
+    line-height: 45px;
+}
+div.copy {
+    width: 100%;
+    margin-top: 5%;
+}
+
+/*175%*/
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    h1 {
+        font-size: 0.9em;
+        line-height: 20px;
+        padding-top: 20px;
+    }
+    .informing h2,
+    .benefits-text h2,
+    h2 {
+       font-size: 1em;
+        line-height: 12px; 
+    }
+    h3:not(.small-underhead) {
+    font-size: 0.7em;
+    }
+    img {
+        width: 100%;
+    }
+    .logo {
+        font-size: 0.8em;
+    }
+
+     .header-navigation {
+    word-spacing: 5px;
+
+}
+    .navigation a, a {
+        font-size: 0.3em;
+        line-height: 3px;
+        margin: auto;
+    }
+    .navigation-button {
+        width: 18%;
+    }
+    .navigation-submit {
+        font-size: 0.3em;
+        width: 60%;
+        height: 20px;
+    }
+    .header-main {
+        width: 40%;
+        margin-left: 20%;
+    }
+    .header-text p{
+        font-size: 0.5em;
+        line-height: 12px;
+    }
+    .button-service,
+    .button-sign {
+        font-size: 0.4em;
+        padding: 4% 10%;
+    }
+    .promo,
+    .article-blocks,
+    .informing,
+    .benefits-block {
+       font-size: 0.5em; 
+       line-height: 15px;
+    }
+    .small-underhead {
+        width: 50%;
+        font-size: 0.5em;
+        line-height: 15px;
+    }
+    .article-text li::before {
+        background-size: 20%;
+    }
+    .article-img {
+        align-self: center;
+    }
+    .informing-text {
+        width: 100%;
+    }
+    .benefits {
+        background-size: 15%, 15%, 15%
+    }
+    footer {
+        background-size: 50%, 100%, 10%, 10%;
+    }
+    .purchases {
+        width: 90%;
+        height: 300px;
+    }
+    .purchases-block1,
+.purchases-block2,
+    .purchases-block3  {
+        width: 40%;
+        height: 240px;
+    }
+    .purchases-block2 {
+        height: 280px;
+    }
+    .purchases h4 {
+        font-size: 0.8em;
+    }
+    .purchases ul {
+        margin: 5% auto 0;
+    }
+    .purchases li {
+        font-size: 0.4em;
+        margin: auto;
+        line-height: 15px;
+    }
+    .purchases li::before {
+        background-size: 20%;
+    }
+    .big-text {
+        margin-top: 1%;
+         font-size: 0.5em;
+    }
+    .big-number {
+        font-size: 1.5em;
+    }
+    .purchases button {
+        margin: 5%;
+          font-size: 0.5em;
+    }
+    sup {
+       font-size: 1.2em; 
+    }
+    .best-seller {
+       font-size: 0.7em; 
+        padding: 2%;
+    }
+    .footer {
+        margin: 2% auto;
+        border-radius: 50px 50px 0 0;
+    }
+    .footer,
+    .footer li{
+       font-size: 0.6em; 
+        line-height: 17px;
+    }
+   .footer div p {
+    line-height: 13px;
+    }
+    div.copy {
+        margin-top: 1%;
+    }
+}
+
+/*150%*/
+@media screen and (min-width: 600px) and (max-width: 770px) {
+    .header-text h1 {
+        font-size: 1.3em;
+        line-height: 25px;
+    }
+    .informing h2,
+    .benefits-text h2,
+    h2 {
+       font-size: 2.1em;
+        line-height: 30px; 
+    }
+    h3:not(.small-underhead) {
+    font-size: 1.3em;
+    }
+    img {
+        width: 100%;
+    }
+    .logo {
+        font-size: 1em;
+    }
+     .header-navigation {
+    word-spacing: 12px;
+   
+}
+    .navigation a, a {
+        font-size: 0.5em;
+        line-height: 3px;
+        margin: auto;
+    }
+    .navigation-button {
+        width: 18%;
+    }
+    .navigation-submit {
+        font-size: 0.4em;
+        width: 60%;
+        height: 28px;
+    }
+    .header-main {
+        width: 38%;
+        margin-left: 18%;
+    }
+    .header-text p {
+        font-size: 0.6em;
+        line-height: 15px;
+    }
+    .button-service,
+    .button-sign {
+        font-size: 0.6em;
+        padding: 4% 10%;
+    }
+    .promo,
+    .article-blocks,
+    .informing,
+    .benefits-block {
+       font-size: 0.7em; 
+       line-height: 20px;
+    }
+    .small-underhead {
+        width: 50%;
+        font-size: 1em;
+        line-height: 15px;
+    }
+    .article-text li::before {
+        background-size: 20%;
+    }
+    .article-img,
+    .benefits-image {
+        width: 50%;
+    }
+    .informing-text {
+        width: 100%;
+    }
+    .benefits {
+        background-size: 15%, 15%, 15%
+    }
+    footer {
+        background-size: 10%, 10%;
+    }
+    .purchases {
+        width: 80%;
+        height: 300px;
+    }
+    .purchases-block1,
+.purchases-block2,
+    .purchases-block3  {
+        width: 40%;
+        height: 280px;
+    }
+    .purchases-block2 {
+        height: 290px;
+    }
+    .purchases h4 {
+        font-size: 0.8em;
+    }
+    .purchases ul {
+        margin: 7% auto 0;
+    }
+    .purchases li {
+        width: 70%;
+        font-size: 0.7em;
+        margin: auto;
+        line-height: 25px;
+    }
+    .purchases li::before {
+        background-size: 40%;
+    }
+    .big-text {
+        margin-top: 1%;
+         font-size: 1em;
+    }
+    .big-number {
+        font-size: 1.5em;
+    }
+    .purchases button {
+        margin: 5%;
+          font-size: 0.5em;
+    }
+    sup {
+       font-size: 1.2em; 
+    }
+    .best-seller {
+       font-size: 0.7em; 
+        padding: 2%;
+    }
+    .footer {
+        width: 80%;
+        margin: 5% auto;
+        border-radius: 50px 50px 0 0;
+    }
+    .footer,
+    .footer li{
+       font-size: 0.8em; 
+        line-height: 20px;
+    }
+    .footer div p {
+    line-height: 20px;
+    }
+    div.copy {
+        margin-top: 1%;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.3em;
+        line-height: 30px;
+    }
+    .informing h2,
+    .benefits-text h2,
+    h2 {
+       font-size: 2.1em;
+        line-height: 30px; 
+    }
+    h3:not(.small-underhead) {
+    font-size: 1.4em;
+    }
+    img {
+        width: 100%;
+    }
+    .logo {
+        font-size: 1.3em;
+    }
+     .header-navigation {
+    word-spacing: 20px;
+}
+    .navigation a, a {
+        font-size: 0.9em;
+        line-height: 3px;
+        margin: auto;
+    }
+    .navigation-button {
+        width: 18%;
+    }
+    .navigation-submit {
+        font-size: 0.6em;
+        width: 60%;
+        height: 40px;
+    }
+    .header-main {
+        width: 40%;
+        margin-left: 18%;
+    }
+    .header-text {
+        width: 100%;
+        font-size: 0.8em;
+        line-height: 20px;
+    }
+    .button-service,
+    .button-sign {
+        font-size: 0.8em;
+        padding: 4% 10%;
+    }
+    .promo,
+    .article-blocks,
+    .informing,
+    .benefits-block {
+       font-size: 0.8em; 
+       line-height: 20px;
+    }
+    .small-underhead {
+        width: 50%;
+        font-size: 1em;
+        line-height: 20px;
+    }
+    .article-text li::before {
+        background-size: 40%;
+    }
+    .article-img,
+    .benefits-image {
+        width: 50%;
+    }
+    .informing-text {
+        width: 100%;
+    }
+    .benefits {
+        background-size: 10%, 10%, 10%
+    }
+    footer {
+        background-size: 10%, 10%;
+    }
+    .purchases {
+        width: 70%;
+        height: 450px;
+    }
+    .purchases-block1,
+.purchases-block2,
+    .purchases-block3  {
+        width: 40%;
+        height: 350px;
+    }
+    .purchases-block2 {
+        height: 400px;
+    }
+    .purchases h4 {
+        font-size: 0.8em;
+    }
+    .purchases ul {
+        margin: 7% auto 0;
+    }
+    .purchases li {
+        width: 70%;
+        font-size: 0.7em;
+        margin: auto;
+        line-height: 35px;
+    }
+    .purchases li::before {
+        background-size: 60%;
+    }
+    .big-text {
+        margin-top: 1%;
+         font-size: 1em;
+    }
+    .big-number {
+        font-size: 1.5em;
+    }
+    .purchases button {
+        margin: 5%;
+          font-size: 0.5em;
+    }
+    sup {
+       font-size: 1.2em; 
+    }
+    .best-seller {
+       font-size: 0.7em; 
+        padding: 2%;
+    }
+    .footer {
+        width: 80%;
+        margin: 5% auto;
+        border-radius: 50px 50px 0 0;
+    }
+    .footer,
+    .footer li{
+       font-size: 0.8em; 
+        line-height: 20px;
+    }
+    div.copy {
+        margin-top: 1%;
+    }
+}
+
+/*90%*/
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    h1 {
+        font-size: 2.2em;
+        line-height: 40px;
+    }
+    .informing h2,
+    .benefits-text h2,
+    h2 {
+       font-size: 2.2em;
+        line-height: 40px; 
+    }
+    h3:not(.small-underhead) {
+    font-size: 1.4em;
+    }
+    img {
+        width: 100%;
+    }
+    .logo {
+        font-size: 1.3em;
+    }
+    .header-navigation {
+    word-spacing: 40px;
+}
+    .navigation a, a {
+        font-size: 0.9em;
+        line-height: 3px;
+        margin: auto;
+    }
+    .navigation-button {
+        width: 18%;
+    }
+    .navigation-submit {
+        font-size: 0.8em;
+        width: 60%;
+        height: 40px;
+    }
+    .header-main {
+        width: 34%;
+        margin-left: 22%;
+    }
+    .header-text {
+        width: 100%;
+        font-size: 0.8em;
+        line-height: 25px;
+    }
+    .button-service,
+    .button-sign {
+        padding: 4% 10%;
+    }
+    .promo,
+    .article-blocks,
+    .informing,
+    .benefits-block {
+       font-size: 0.9em; 
+       line-height: 30px;
+    }
+    .small-underhead {
+        width: 50%;
+        font-size: 1em;
+        line-height: 25px;
+    }
+    .article-text li::before {
+        background-size: 50%;
+    }
+    .article-img,
+    .benefits-image {
+        width: 50%;
+    }
+    .informing-text {
+        width: 100%;
+    }
+     .informing-image {
+        width: 70%;
+    }
+    .benefits {
+        background-size: 10%, 10%, 10%
+    }
+    footer {
+        background-size: 100%, 100%, 10%, 10%;
+    }
+    .purchases {
+        width: 70%;
+        height: 550px;
+    }
+    .purchases-block1,
+.purchases-block2,
+    .purchases-block3  {
+        width: 40%;
+        height: 350px;
+    }
+    .purchases-block2 {
+        height: 400px;
+    }
+    .purchases h4 {
+        font-size: 0.8em;
+    }
+    .purchases ul {
+        margin: 7% auto 0;
+    }
+    .purchases li {
+        width: 70%;
+        font-size: 0.8em;
+        margin: auto;
+        line-height: 45px;
+    }
+    .purchases li::before {
+        background-size: 70%;
+    }
+    .big-text {
+        margin-top: 1%;
+         font-size: 1.5em;
+    }
+    .big-number {
+        font-size: 2em;
+    }
+    .purchases button {
+        margin: 5%;
+          font-size: 0.5em;
+    }
+    sup {
+       font-size: 1.2em; 
+    }
+    .best-seller {
+       font-size: 1.5em; 
+        padding: 3%;
+    }
+    .footer {
+        width: 70%;
+        margin: 5% auto;
+        border-radius: 50px 50px 0 0;
+    }
+    .footer,
+    .footer li{
+       font-size: 0.9em; 
+        line-height: 25px;
+    }
+    div.copy {
+        margin-top: 5%;
+    }
+}
+
+/*75%*/
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    h1 {
+        font-size: 2.5em;
+        line-height: 40px;
+    }
+    .informing h2,
+    .benefits-text h2,
+    h2 {
+       font-size: 2.2em;
+        line-height: 40px; 
+    }
+    h3:not(.small-underhead) {
+    font-size: 1.4em;
+    }
+    img {
+        width: 100%;
+    }
+    .logo {
+        font-size: 1.4em;
+    }
+    .header-navigation {
+    word-spacing: 50px; 
+}
+     .navigation {
+        margin-left: 10%;
+     }
+ 
+    .navigation a, a {
+        font-size: 0.9em;
+        line-height: 3px;
+    }
+    .navigation-button {
+        width: 18%;
+
+    }
+    .navigation-submit {
+        width: 50%;
+        height: 45px;
+        font-size: 0.6em;
+    }
+    .header-main {
+        width: 33%;
+        margin-left: 22%;
+    }
+    .header-text {
+        width: 100%;
+        font-size: 0.8em;
+        line-height: 25px;
+    }
+    .button-service,
+    .button-sign {
+        padding: 4% 10%;
+    }
+    .promo,
+    .article-blocks,
+    .informing,
+    .benefits-block {
+       font-size: 0.9em; 
+       line-height: 30px;
+    }
+    .small-underhead {
+        width: 50%;
+        font-size: 1em;
+        line-height: 25px;
+    }
+    .article-text li::before {
+        background-size: 50%;
+    }
+    .article-img,
+    .benefits-image {
+        width: 50%;
+    }
+    .informing-text {
+        width: 100%;
+    }
+     .informing-image {
+        width: 70%;
+    }
+    .benefits {
+        background-size: 10%, 10%, 10%
+    }
+    footer {
+        background-size: 100%, 100%, 10%, 10%;
+    }
+    .purchases {
+        width: 70%;
+        height: 650px;
+    }
+    .purchases-block1,
+.purchases-block2,
+    .purchases-block3  {
+        width: 40%;
+        height: 450px;
+    }
+    .purchases-block2 {
+        height: 530px;
+    }
+    .purchases h4 {
+        font-size: 0.8em;
+    }
+    .purchases ul {
+        margin: 7% auto 0;
+    }
+    .purchases li {
+        width: 70%;
+        font-size: 1em;
+        margin: auto;
+        line-height: 55px;
+    }
+    .purchases li::before {
+        background-size: 70%;
+    }
+    .big-text {
+        margin-top: 1%;
+         font-size: 2em;
+    }
+    .big-number {
+        font-size: 2em;
+    }
+    .purchases button {
+        margin: 7%;
+          font-size: 0.4em;
+    }
+    sup {
+       font-size: 1.2em; 
+    }
+    .best-seller {
+       font-size: 1.8em; 
+        padding: 4%;
+    }
+    .footer {
+        width: 70%;
+        margin: 5% auto;
+        border-radius: 50px 50px 0 0;
+    }
+    .footer,
+    .footer li{
+       font-size: 0.9em; 
+        line-height: 25px;
+    }
+    div.copy {
+        margin-top: 5%;
+    }
+}
+
+/*67%*/
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+    h1 {
+        font-size: 2.5em;
+        line-height: 50px;
+    }
+    .informing h2,
+    .benefits-text h2,
+    h2 {
+       font-size: 2.3em;
+        line-height: 45px; 
+    }
+    h3:not(.small-underhead) {
+    font-size: 1.4em;
+    }
+    img {
+        width: 100%;
+    }
+    .logo {
+        font-size: 1.9em;
+    }
+    .navigation {
+    align-self: center;
+    text-align: right;
+}
+    .header-navigation {
+    word-spacing: 50px; 
+}
+ 
+    .header-navigation a, a {
+        font-size: 1em;
+        line-height: 5px;
+        margin: auto;
+    }
+    .navigation-button {
+        width: 17%;
+    }
+    .navigation-submit {
+        font-size: 0.8em;
+        width: 60%;
+        height: 50px;
+    }
+    .header-main {
+        width: 34%;
+        margin-left: 18%;
+    }
+    .header-text {
+        width: 100%;
+        font-size: 1em;
+        line-height: 30px;
+    }
+    .button-service,
+    .button-sign {
+        padding: 4% 10%;
+    }
+    .promo,
+    .article-blocks,
+    .informing,
+    .benefits-block {
+       font-size: 0.9em; 
+       line-height: 30px;
+    }
+    .small-underhead {
+        width: 50%;
+        font-size: 1.2em;
+        line-height: 30px;
+    }
+    .article-text li::before {
+        background-size: 50%;
+    }
+    .article-img,
+    .benefits-image {
+        width: 50%;
+    }
+    .informing-text {
+        width: 100%;
+    }
+     .informing-image {
+        width: 70%;
+    }
+    .benefits {
+        background-size: 10%, 10%, 10%
+    }
+    footer {
+        background-size: 100%, 100%, 10%, 10%;
+    }
+    .purchases {
+        width: 70%;
+        height: 650px;
+    }
+    .purchases-block1,
+.purchases-block2,
+    .purchases-block3  {
+        width: 40%;
+        height: 500px;
+    }
+    .purchases-block2 {
+        height: 600px;
+    }
+    .purchases h4 {
+        font-size: 0.8em;
+    }
+    .purchases ul {
+        margin: 7% auto 0;
+    }
+    .purchases li {
+        width: 70%;
+        font-size: 1em;
+        margin: auto;
+        line-height: 55px;
+    }
+    .purchases li::before {
+        background-size: 70%;
+    }
+    .big-text {
+        margin-top: 1%;
+         font-size: 2em;
+    }
+    .big-number {
+        font-size: 2em;
+    }
+    .purchases button {
+        margin: 7%;
+          font-size: 0.4em;
+    }
+    sup {
+       font-size: 1.2em; 
+    }
+    .best-seller {
+       font-size: 1.8em; 
+        padding: 4%;
+    }
+    .footer {
+        width: 70%;
+        margin: 5% auto;
+        border-radius: 50px 50px 0 0;
+    }
+    .footer,
+    .footer li{
+       font-size: 1em; 
+        line-height: 25px;
+    }
+    div.copy {
+        margin-top: 5%;
+    }
+}

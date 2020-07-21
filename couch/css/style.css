@@ -1,0 +1,607 @@
+@font-face {
+    font-family: YesevaOne; 
+    src: url(../fonts/YesevaOne.ttf); 
+    src: local(Yeseva One), url(../fonts/YesevaOne.ttf); /* Для остальных браузеров */
+   }
+@font-face {
+    font-family: Montserrat; 
+    src: url(../fonts/Montserrat.ttf); 
+    src: local(Montserrat), url(../fonts/Montserrat.ttf); /* Для остальных браузеров */
+   }
+@font-face {
+    font-family: MontserratBold; 
+    src: url(../fonts/MontserratBold.ttf); 
+    src: local(MontserratBold), url(../fonts/MontserratBold.ttf); /* Для остальных браузеров */
+   }
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-size: 14px;
+    background-color: #eff5fb;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9vw;
+}
+header {
+    color: #fff;
+}
+.header {
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:url(../img/headerGradient.png) no-repeat, url(../img/Mask_Group_1.png) no-repeat;
+    background-size: 100% 100%, 100% 100%;
+}
+.listMe {
+     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 6vw;
+     flex-direction: column;
+    background: url(../img/listMe.png);
+}
+.contain-me,
+.contain-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.contain-me {
+    justify-content: space-between;
+    width: 30%;
+    height: 22%
+}
+.contain-list {
+    position: relative;
+    justify-content: space-around;
+     width: 40%;
+    height: 40%
+}
+.contain-me div,
+.contain-list div {
+    margin: 0 auto;
+}
+.contain-me p {
+    font-size: 0.9vw;
+}
+.rotate {
+    transform: rotate(-90deg);
+}
+.progress {
+    width: 6vw;
+    border-bottom: 1px solid #fff;
+}
+.progress-value {
+    position: absolute;
+    top: -0.2vw;
+    left: 1vw;
+    width: 2vw;
+    border: 1px solid #fff;
+    border-radius: 20%;
+    transform: rotate(180deg);
+}
+span.rotate {
+    display: inline-block;
+    margin: -4.4vw;
+    width: 8.6vw;
+    font-size: 0.8vw;
+    text-align: center;
+}
+.side img{
+    width: 1vw;
+}
+.ellipse {
+    position: relative;
+}
+.ellipse::after {
+    position: absolute;
+    width: 1%;
+    top: 3%;
+    left: 30%;
+    content: "'";
+    color: #fff;
+    font-size: 1.7vw;
+}
+.arrow {
+    animation: down 1s infinite alternate;
+}
+@keyframes down {
+    0% {
+        transform: translateY(-15px);
+    }
+    30% {
+        transform: translateY(-15px);
+    }
+     60% {
+        transform: translateY(-15px);
+    }
+    80% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+.mainHeader {
+    display: flex;
+    flex-direction: column;
+}
+.header-top {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+}
+.header-top div {
+    position: relative;
+    width: 25%;
+    padding: 2% 0;
+    font-size: 0.8vw;
+    font-weight: 400;
+}
+.logo {
+    margin-top: 1vw;
+    font-size: 1.3vw;
+    font-weight: 700;
+}
+.header-top div:nth-child(2) {
+    margin-left: -9%;
+    margin-right: auto;
+}
+.header-top div:nth-child(3) {
+    margin-left: 12%;
+}
+.header-top div:nth-child(4) {
+    text-align: right;
+}
+.tell {
+    margin-bottom: 0;
+    color: #deb880;
+    font-size: 1vw;
+    font-weight: 700;
+}
+.interactive {
+    position: relative;
+}
+.call {
+    border-bottom: 2px #fff dashed;
+}
+
+.man,
+.handset {
+    position: absolute;
+    width: 13%;
+    top: 2.3vw;
+}
+.man {
+    left: -3vw;
+}
+.handset {
+    left: 3vw;
+    animation: rotate 10s alternate 3s;
+    animation-iteration-count: infinite;
+}
+
+.popup--unavailable {
+    display: none;
+}
+fieldset {
+    position: absolute;
+    width: 200px;
+    height: 130px;
+    padding: 20%;
+    text-align: center;
+      border-top-left-radius: 15px 50px;
+    border-bottom-left-radius: 15px 50px; 
+    border-bottom-right-radius: 15px 50px;
+    border-top-right-radius: 15px 50px;
+    background-image: linear-gradient(45deg, #f0bc80 0%, #ffe3a2 51%, #f0bc80 100%);
+    border: 3px solid #deb880;
+    color: #101942;
+    box-sizing: border-box;
+}
+input[type="tel"] {
+    width: 90%;
+    height: 5vh;
+    margin: 5% auto;
+    padding: 5%;
+      border-top-left-radius: 15px 50px;
+    border-bottom-left-radius: 15px 50px; 
+    border-bottom-right-radius: 15px 50px;
+    border-top-right-radius: 15px 50px; 
+     box-sizing: border-box;
+}
+.close-form {
+    position: absolute;
+    right: -40px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    background: transparent;
+}
+.close-form::after,
+.close-form::before{
+    position: absolute;
+    content: '|';
+    top: 2px;
+    
+    height: 30px;
+    color: #fff;
+}
+.close-form::after {
+    transform: rotate(45deg);
+    left: 8px;
+}
+.close-form::before {
+    transform: rotate(-45deg);
+    right: 9px;
+}
+
+.send-form {
+    width: 9vw;
+    height: 6vh;
+    margin: 2% auto;
+    box-shadow: 0 2px 0 #ffe3a2;
+    background-image: linear-gradient(45deg, #f0bc80 0%, #ffe3a2 51%, #f0bc80 100%);
+    border-top-left-radius: 15px 50px;
+    border-bottom-left-radius: 15px 50px; 
+    border-bottom-right-radius: 15px 50px;
+    border-top-right-radius: 15px 50px;
+    border-top: 4px solid radial-gradient(0px 0px at 169.96% 19975%, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    border-bottom: 4px solid #d1aa6f;
+    text-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
+    color: #19273e;
+    font-family: MontserratBold;
+    font-size: 1vw;
+    font-weight: bold;
+}
+.sent--message {
+    width: 100%;
+    font-size: 1.6em;
+    line-height: 28px;
+    
+}
+.form--unavailable {
+    display: none;
+}
+@keyframes rotate {
+    0%,
+    20%,
+    50%,
+    65%,
+    70%,
+    75% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(-40deg);
+    }
+    85% {
+        transform: rotate(40deg);
+    }
+    90% {
+        transform: rotate(-40deg);
+    }
+    100% {
+         transform: rotate(360deg);
+    }
+}
+
+.header-bottom {
+    width: 60vw;
+    margin: 4vw 13.5vw;
+}
+h1 {
+   margin: 0;
+   font-family: YesevaOne;
+   font-size: 2.8vw;
+   font-weight: 400;
+}
+
+.header-bottom ul{
+    margin: 0;
+    padding: 0;
+}
+header li {
+    position: relative;
+    width: 24vw;
+    margin: 2.8vw 0;
+    padding: 0% 2%;
+    font-size: 0.9vw;
+    list-style: none;
+    
+}
+header li::before {
+    position: absolute;
+    top: -20px;
+    left: -3px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    background: url(../img/curve.png) no-repeat;
+}
+.header-bottom h5 {
+    margin: 1.5vw 0;
+    font-family: Montserrat;
+    font-size: 1.2vw;
+    color: #deb980;
+}
+.request {
+    width: 14vw;
+    height: 4.5vw;
+    margin-top: 2.5vw;
+    margin-left: 2%;
+    box-shadow: 0 2px 0 #ffe3a2;
+    background-image: linear-gradient(45deg, #f0bc80 0%, #ffe3a2 51%, #f0bc80 100%);
+    border-top-left-radius: 15px 50px;
+    border-bottom-left-radius: 15px 50px; 
+    border-bottom-right-radius: 15px 50px;
+    border-top-right-radius: 15px 50px;
+    border-top: 4px solid radial-gradient(0px 0px at 169.96% 19975%, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    border-bottom: 4px solid #d1aa6f;
+    text-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
+    color: #19273e;
+    font-family: MontserratBold;
+    font-size: 1vw;
+    font-weight: bold;
+}
+.promo {
+    display: flex;
+    flex-direction: column;
+    background-color: #101942;
+    text-align: center;
+    color: #fff;
+}
+.promo h2 {
+    margin-top: 5%;
+    font-size: 2.3vw;
+    font-family: "Yeseva One";
+    color:#fff;
+}
+h3 {
+    margin-top: -2%;
+    color: #dec080;
+    font-size: 1.6vw;
+    font-weight: 400;
+}
+.beige {
+    color: #deb980;;
+}
+.partners,
+.specifications{
+     display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+.specifications p {
+    width: 50%;
+    margin: 5% auto;
+    text-align: center;
+    font-size: 1.5vw;
+}
+.partners {
+    width: 80%;
+    margin: auto;
+}
+.partners div {
+    width: 25%;
+    text-align: center;
+}
+.partners div p {
+    width: 80%;
+    margin: 15% auto;
+    font-size: 1vw;
+}
+.partners img {
+    height: 6vh;
+}
+.contain {
+    background-color: #021139;
+}
+.shine {
+    padding-top: 8%;
+    width: 25%;
+    background: url(../img/forPad.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+    font-weight: 400;
+}
+.shine:last-child {
+    padding-top: 5%;
+    background: url(../img/forGirl.png) no-repeat;
+    background-size: 100% 120%;
+    background-position: center;
+    color: #deba80;
+}
+.certificate {
+    text-align: center;
+}
+.certificate h2 {
+    width: 40%;
+    margin: 5% auto 1%;
+    font-size: 2.2vw;
+    font-family: "Yeseva One";
+    line-height: 30px;
+    color: #1d3b5f;
+}
+.certificate-contain {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 65%;
+    margin: 2% auto;
+}
+.certificate-contain  div {
+    width: 30%;
+    margin: 3% 0;
+}
+.certificate-contain  div p {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    font-size: 1.1vw;
+    color: #1d3b5f;
+}
+.certificate-contain  strong {
+    font-family: "Montserrat - Bold";
+    font-size: 1.2vw;
+    color: #1d3b5f;
+}
+.certificate-contain img {
+    width: 90%;
+}
+.headering {
+    color: #6f839f;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+footer div {
+    width: 60vw;
+    margin: 1% auto;
+    font-size: 1vw;
+}
+@media screen and (min-width: 300px) and (max-width: 500px){
+    .ellipse::after {
+        left: 35%;
+        top: 40%;
+    }
+    header li::before {
+       background-size: 40%;
+        top: -10px;
+    } 
+    .partners img {
+        height: 2.5vh; 
+    }
+    .certificate h2 {
+        line-height: 12px;
+    }
+    fieldset {
+    right: 1px;
+    width: 100px;
+    height: 90px;
+    padding: 10%;
+    z-index: 2;
+        box-sizing: border-box;
+    
+}
+input[type="tel"] {
+    height: 2vh;
+    padding-left: 5%;
+}
+
+.send-form {
+    width: 15vw;
+    height: 6vh;
+  font-size: 2vw;
+    font-weight: bold;
+}
+
+}
+@media screen and (min-width: 500px) and (max-width: 770px){
+     .ellipse::after {
+        top: 20%;
+    }
+    header li::before {
+       background-size: 55%;
+       top: -10px;
+    } 
+    .partners img {
+        height: 4vh; 
+    }
+    .certificate h2 {
+        line-height: 18px;
+    }
+    fieldset {
+    width: 150px;
+    height: 90px;
+    padding: 10%;
+    z-index: 2;
+    box-sizing: border-box;
+    }
+    form {
+         box-sizing: border-box;
+   
+    }
+    input[type="tel"] {
+    height: 2vh;
+    padding-left: 5%;
+}
+
+.send-form {
+    width: 15vw;
+    height: 7vh;
+  font-size: 2vw;
+    font-weight: bold;
+}
+}
+@media screen and (min-width: 771px) and (max-width: 1023px){
+     .ellipse::after {
+    }
+    header li::before {
+       background-size: 70%;
+       top: -10px;
+    } 
+    .partners img {
+        height: 6vh; 
+    }
+    .certificate h2 {
+        line-height: 24px;
+    }
+    .send-form {
+    width: 15vw;
+    height: 7vh;
+  font-size: 2vw;
+    font-weight: bold;
+}
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+    header li::before {
+       background-size: 90%;
+       top: -15px;
+    } 
+    .partners img {
+        height: 6vh; 
+    }
+    .certificate h2 {
+        line-height: 27px;
+    }
+        fieldset {
+    width: 250px;
+    height: 150px;
+}
+}
+@media screen and (min-width: 1180px) {
+     header li::before {
+       background-size: 100%;
+       top: -20px;
+    } 
+    .partners img {
+        height: 7vh; 
+    }
+        fieldset {
+    width: 280px;
+    height: 200px;
+}
+}
+
+@media screen and (min-width: 1600px) {
+     header li::before {
+       background-size: 100%;
+       top: -20px;
+    } 
+    .partners img {
+        height: 7vh; 
+    }
+        fieldset {
+    width: 350px;
+    height: 270px;
+}
+}
