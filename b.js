@@ -2,7 +2,7 @@ var btnPrev = document.querySelector('.prev');
 
 var btnNext = document.querySelector('.next');
 
-var images = document.querySelectorAll('.galery .photos img');
+var images = document.querySelectorAll('.header__picture .header__slider');
 
 
 var i = 0;

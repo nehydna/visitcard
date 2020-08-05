@@ -1,0 +1,77 @@
+.explorer {
+    flex-basis: 955px;
+    position: relative;
+    text-align: justify;
+    background: rgba(229, 244, 248, 0.8);
+}
+.abstra {
+   margin-top: 10%;
+   margin-bottom: 10%;    
+   margin-left: 5%;
+   border: 5px solid white;
+   box-shadow: 15px 15px 20px rgba(181, 203, 221, 0.8),
+        -15px -15px 20px rgba(181, 203, 221, 0.8);
+}
+@media screen and (max-width: 680px) {
+    .abstra {
+        max-width: 500px;
+        min-height: 370px;
+        margin-top: 10%;
+        margin-bottom: 10%; 
+    }
+    .absolute h2 {
+        font-size: 4vw;
+        margin-bottom: 0;
+    }
+    .text {
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 1.2em;
+    }
+     .absolute {
+        height: 70%;
+    }
+}
+.explorer__absolute {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    max-height: 50%;
+    max-width: 50%;
+    padding: 1% 2%;
+    background: white;
+    z-index: 2;
+    font-family: gilda-display;
+    font-size: 90%;
+    line-height: 1.1em;
+    overflow-y: auto;
+}
+.absolute h2{
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+.explorer__text {
+    margin-top: 2%;
+    padding: 0 1%;
+    border: 1px dashed rgba(87, 118, 136, 0.5);
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .absolute {
+        height: 80%;
+     }
+       .explorer__text p{
+        font-size: 1.4em;
+        line-height: 30px;
+    }
+   
+}
+
+@media screen and (min-width: 1600px){
+    .absolute {
+        height: 70%;
+    }
+    .explorer__text p{
+        font-size: 2em;
+        line-height: 50px;
+    }
+}

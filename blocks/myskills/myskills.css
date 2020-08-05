@@ -1,0 +1,57 @@
+.myskills {
+    flex-basis: 640px;
+    
+}
+.mySkills__about {
+   padding-left: 1%; 
+    font-size: 1em;
+}
+@media screen and (max-width: 680px) {
+      .myskills__about  {
+      font-size: 0.9em;  
+    }
+    footer {
+        font-size: 1.1em;
+    }
+}
+@media screen and (max-width: 1600px) {
+     .myskills__about {
+      font-size: 1.3em;  
+    }
+      li {
+        line-height: 45px;
+    }
+    li::before {
+       content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: transparent rgba(87, 118, 136);
+      border-width: 5px 0 5px 20px;
+      position: absolute;
+      left: -30px;
+      top: 20px;
+}
+   
+}
+@media screen and (min-width: 1600px) {
+    .myskills__about {
+      font-size: 2em;  
+    }
+    li {
+        line-height: 55px;
+    }
+        li::before {
+       content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: transparent rgba(87, 118, 136);
+      border-width: 5px 0 5px 20px;
+      position: absolute;
+      left: -30px;
+      top: 20px;
+        }
+}
