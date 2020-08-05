@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "open-sans";
+         src: url(../fonts/Open_Sans/OpenSans-Regular.ttf) format("truetype");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "open-sans", Arial, sans-serif;
+    font-size: 18px;
+    color: #686868;
+}
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    background: white;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: open-sans;
+    font-size: 3em;
+    color: white;
+    margin-top: -5%;
+    margin-bottom: 10%;
+    padding-top: 100px;
+}
+@media screen and (max-width: 400px) {
+    h1 {
+      font-size: 2em;  
+    }
+}
+h2 {
+    font-family: gilda-display;
+    font-size: 30pt;
+    line-height: 20px;
+    color: #686868;
+    text-align: center;
+}
+
+p, li {
+    line-height: 25px;
+}
+
+li {
+    position: relative;
+    padding: 0;
+   list-style: none;
+   color: #686868;
+    
+}
+li::before {
+       content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: transparent rgba(87, 118, 136);
+      border-width: 5px 0 5px 20px;
+      position: absolute;
+      left: -30px;
+      top: 6px;
+}
+@import url(../blocks/header/header.css);
+
+@import url(../blocks/content-block/content-block.css);
+@import url(../blocks/gallery/gallery.css);
+@import url(../blocks/buttons/buttons.css);
+@import url(../blocks/explorer/explorer.css);
+
+@import url(../blocks/myskills/myskills.css);
+
+
+
+@import url(../blocks/footer/footer.css);

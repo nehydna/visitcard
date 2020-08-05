@@ -1,0 +1,56 @@
+footer {
+    flex-basis: 580px;
+     background: linear-gradient(to right, rgba(87, 118, 136, 0.5), rgba(175, 141, 112, 0.5));
+    text-align: center;
+}
+.footer {
+    
+    font-family: gilda-display;
+    max-width: 90%;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 5%;
+    background: none;
+    color: #686868;
+    vertical-align: baseline;
+    
+}
+
+@media screen and (max-width: 550px) {
+    .footer {
+    flex-wrap: wrap;
+     font-size: 90%;
+    }
+    .meMedia, 
+    .sprite, 
+    .otherContacts, 
+    .contacts {
+        width: 100%;
+    }
+ 
+}
+
+@media screen and (min-width: 550px) and (max-width: 650px) {
+    .footer {
+    flex-wrap: wrap;
+     font-size: 90%;
+    }
+    .meMedia {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1550px) {
+    footer {
+        font-size: 2em;
+        line-height: 40px;
+    }
+}
+
+.footer nav a:hover {
+    transition-duration: 1s;
+    color: brown;
+    
+}
