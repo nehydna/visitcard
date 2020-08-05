@@ -1,25 +1,17 @@
 .myskills {
     flex-basis: 640px;
+    width: 90%;
+    margin: auto;
+    font-size: 1em; 
+    line-height: 60px;
     
 }
 .mySkills__about {
    padding-left: 1%; 
     font-size: 1em;
 }
-@media screen and (max-width: 680px) {
-      .myskills__about  {
-      font-size: 0.9em;  
-    }
-    footer {
-        font-size: 1.1em;
-    }
-}
-@media screen and (max-width: 1600px) {
-     .myskills__about {
-      font-size: 1.3em;  
-    }
       li {
-        line-height: 45px;
+        line-height: 60px;
     }
     li::before {
        content: '';
@@ -33,25 +25,11 @@
       left: -30px;
       top: 20px;
 }
-   
-}
-@media screen and (min-width: 1600px) {
-    .myskills__about {
-      font-size: 2em;  
+@media screen and (max-width: 680px) {
+      .myskills__about  {
+      font-size: 0.9em;  
     }
-    li {
-        line-height: 55px;
+    footer {
+        font-size: 1.1em;
     }
-        li::before {
-       content: '';
-      display: block;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-color: transparent rgba(87, 118, 136);
-      border-width: 5px 0 5px 20px;
-      position: absolute;
-      left: -30px;
-      top: 20px;
-        }
 }

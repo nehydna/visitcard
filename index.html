@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <header>
+        <header class="header">
             <div class="header__picture">
                 <div class="header__slider">
                     <img src="img/1397000242_0.jpg" alt="" class="header__slide">
@@ -21,10 +21,11 @@
 
                 </div>
                 <div class="header__gradient">
-                    <h1>Brand New Site<br>
+                    <h1 class="header__title">Brand New Site<br>
                         Beyond Ordinary</h1>
 
                     <nav class="header__calendar">
+                        <a href="/visitcard/index.html" class="header__home link">home</a>
                         <a href="inner.html" class="header__about link" target="_blank">about</a>
                         <a href="portfolio.html" class="header__exemple link" target="_blank">portfolio</a>
                         <a href="articles.html" class="header__writes link" target="_blank">notes</a>
@@ -33,103 +34,106 @@
                 </div>
             </div>
         </header>
-        <section class="content-block">
-            <div class="content-block__text">
-                <div class="content-block__paragraph">
-                    <h2>Конечно, это не...</h2>
-                    <p>коммерческий проект, не всеобъясняющий лендинг, а простая статичная страничка - визитка верстальщика (пока)...</p>
-                    <p>Здесь только общая информация обо мне и моих работах</p>
-                    <p>Заходите, располагайтесь.
-                    </p>
-                    <p>Все ссылки кликабельны, в меню линки ведут на информацию обо мне и на примеры моей верстки</p>
+        <main>
+            <section class="content-block">
+                <div class="content-block__text">
+                    <div class="content-block__paragraph">
+                        <h2>Конечно, это не...</h2>
+                        <p>коммерческий проект, не всеобъясняющий лендинг, а простая статичная страничка - визитка верстальщика (пока)...</p>
+                        <p>Здесь только общая информация обо мне и моих работах</p>
+                        <p>Заходите, располагайтесь.
+                        </p>
+                        <p>Все ссылки кликабельны, в меню линки ведут на информацию обо мне и на примеры моей верстки</p>
+
+                    </div>
+                    <img src="img/programmirovanie-kak-novyi-vid-chelovecheskoi-deyatelnosti.jpg" alt="" class="content-block__image">
+                </div>
+            </section>
+
+            <section class="explorer">
+                <img src='img/abstract.png' class="abstra" alt="">
+                <div class="explorer__absolute">
+
+                    <h2>Explorer</h2>
+
+                    <div class="explorer__text">
+                        <p>Прежде всего хочется отметить, что я являюсь, как это называют, "вечным студентом".</p>
+                        <p>Никогда в детстве не думала, что меня когда-нибудь захватит процесс обучения.</p>
+                        <p>Но программирование затягивает и для "вечного студента" оно является спасением от информационного голода. </p>
+                    </div>
+                </div>
+            </section>
+            <section class="myskills">
+                <h2>My skills</h2>
+                <div class="myskills__about">
+                    <h3>If you looking for</h3>
+                    <p>Навыки - величина весьма изменчивая, поскольку я, как уже упоминала выше, очень люблю учиться и прокачивать "скиллы".</p>
+
+                    <p>
+                        Из актуальных навыков можно отметить:</p>
+                    <ul>
+
+                        <li>практикую адаптивную верстку (стандартные html, css, javascript);</li>
+                        <li>умею использовать бутстрап (четвертый который);</li>
+                        <li> куда же без английского (english уровня upper-intermediate);</li>
+                        <li>SASS - для облегчения работы.</li>
+                    </ul>
+                    <p>
+
+                        Кроме того, активно изучаю: </p>
+
+                    <ul>
+
+                        <li>интеграцию сайтов на CMS (в частности,Wordpress);</li>
+                        <li>библиотеку jquery;</li>
+                        <li>AJAX.</li>
+                    </ul>
+
+                    А самое главное - я все это активно применяю на практике!
+
+
+                    На очереди в обучении:
+                    <ul>
+
+                        <li>базы данных;</li>
+                        <li>РНР (да, бэкенд интересует в той же степени, что и фронтенд);</li>
+                        <li>Python.</li>
+                    </ul>
+
+
 
                 </div>
-                <img src="img/programmirovanie-kak-novyi-vid-chelovecheskoi-deyatelnosti.jpg" alt="" class="content-block__image">
-            </div>
-        </section>
-
-        <section class="explorer">
-            <img src='img/abstract.png' class="abstra" alt="">
-            <div class="explorer__absolute">
-
-                <h2>Explorer</h2>
-
-                <div class="explorer__text">
-                    <p>Прежде всего хочется отметить, что я являюсь, как это называют, "вечным студентом".</p>
-                    <p>Никогда в детстве не думала, что меня когда-нибудь захватит процесс обучения.</p>
-                    <p>Но программирование затягивает и для "вечного студента" оно является спасением от информационного голода. </p>
-                </div>
-            </div>
-        </section>
-        <section class="myskills">
-            <h2>My skills</h2>
-            <div class="myskills__about">
-                <h3>If you looking for</h3>
-                <p>Навыки - величина весьма изменчивая, поскольку я, как уже упоминала выше, очень люблю учиться и прокачивать "скиллы".</p>
-
-                <p>
-                    Из актуальных навыков можно отметить:</p>
-                <ul>
-
-                    <li>практикую адаптивную верстку (стандартные html, css, javascript);</li>
-                    <li>умею использовать бутстрап (четвертый который);</li>
-                    <li> куда же без английского (english уровня upper-intermediate);</li>
-                    <li>SASS - для облегчения работы.</li>
-                </ul>
-                <p>
-
-                    Кроме того, активно изучаю: </p>
-
-                <ul>
-
-                    <li>интеграцию сайтов на CMS (в частности,Wordpress);</li>
-                    <li>библиотеку jquery;</li>
-                    <li>AJAX.</li>
-                </ul>
-
-                А самое главное - я все это активно применяю на практике!
-
-
-                На очереди в обучении:
-                <ul>
-
-                    <li>базы данных;</li>
-                    <li>РНР (да, бэкенд интересует в той же степени, что и фронтенд);</li>
-                    <li>Python.</li>
-                </ul>
-
-
-
-            </div>
-        </section>
+            </section>
+        </main>
 
         <footer class="footer">
+            <div class="footer__wrapper">
 
-            <nav class="contacts">
-                Напишите мне:
-                <a href="https://e.mail.ru/compose/?to=belka-ld@bk.ru" target="blank">e-mail</a>
-                <a href="https://e.mail.ru/compose/?to=pessimist2010@yandex.ru" target="_blank">emergensy e-mail</a>
-            </nav>
-            <nav class="otherContacts"> Позвоните мне:
-                <a href="#">phone number</a>
-                <a href="#">Linkedin</a>
-            </nav>
-            <nav class="sprite">
-                Свяжитесь со мной в сосетях:
-                <a href="https://www.facebook.com/profile.php?id=100001708756418">facebook</a>
-                <a href="#">twitter</a>
-            </nav>
-            <nav class="meMedia">
-                И здесь я тоже есть:
-                <a href="#">youtube</a>
-                <a href="#">instagramm</a>
-            </nav>
-
+                <nav class="contacts">
+                    Напишите мне:
+                    <a href="https://e.mail.ru/compose/?to=belka-ld@bk.ru" target="blank">e-mail</a>
+                    <a href="https://e.mail.ru/compose/?to=pessimist2010@yandex.ru" target="_blank">emergensy e-mail</a>
+                </nav>
+                <nav class="otherContacts"> Позвоните мне:
+                    <a href="#">phone number</a>
+                    <a href="#">Linkedin</a>
+                </nav>
+                <nav class="sprite">
+                    Свяжитесь со мной в сосетях:
+                    <a href="https://www.facebook.com/profile.php?id=100001708756418">facebook</a>
+                    <a href="#">twitter</a>
+                </nav>
+                <nav class="meMedia">
+                    И здесь я тоже есть:
+                    <a href="#">youtube</a>
+                    <a href="#">instagramm</a>
+                </nav>
+            </div>
 
 
         </footer>
     </div>
-    <script src="b.js"></script>
+<!--    <script src="b.js"></script>-->
 </body>
 
 </html>

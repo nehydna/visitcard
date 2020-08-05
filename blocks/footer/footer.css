@@ -1,21 +1,33 @@
-footer {
-    flex-basis: 580px;
+.footer {
+      width: 100%;
      background: linear-gradient(to right, rgba(87, 118, 136, 0.5), rgba(175, 141, 112, 0.5));
+    padding: 5% 0;
+    font-family: gilda-display;
+    color: #686868;
+    
+}
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
     text-align: center;
 }
-.footer {
-    
-    font-family: gilda-display;
-    max-width: 90%;
-    font-size: 1em;
+.contacts,
+.otherContacts,
+.sprite,
+.meMedia {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
-    padding-top: 5%;
-    background: none;
+    flex-direction: column;
+    font-size: 1.3em;
+    line-height: 40px;
+}
+
+.footer nav a {
     color: #686868;
-    vertical-align: baseline;
+    text-decoration: none;
+    font-size: 1.1em;
+    line-height: 40px;
     
 }
 
@@ -52,5 +64,6 @@ footer {
 .footer nav a:hover {
     transition-duration: 1s;
     color: brown;
+    
     
 }
