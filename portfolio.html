@@ -1,64 +1,92 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Untitled Document</title>
     <link rel="stylesheet" href="styles/style.css">
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <header id="header" class="header"></header>
-        <div class="content-block">
-            <div class="content-notes">
-                <h2>My portfolio</h2>
-                <h3>Примеры верстки по макетам PSD</h3>
-                <div class="galery">
-                    <div class="photos">
+  <body>
+<div class="container">
+        <header class="header">
+            <div class="header__picture">
+                <div class="header__slider">
+                    <img src="img/1397000242_0.jpg" alt="" class="header__slide">
+                    <img src="img/web-programirovanie.jpg" alt="" class="header__slide">
+                    <img src="img/site-builder.jpg" alt="" class="header__slide">
+                    <img src="img/Informatika.jpg" alt="" class="header__slide">
 
-                        <a href="invite/indexINV.html" target="_blank"><img src="img/invite.PNG" alt=""
-                                title="simple page" class="photos-active"> </a>
-
-                        <a href="desktop/pex.html" target="_blank"> <img src="img/pex.PNG" alt=""
-                                title="шаблон для тренировки был предоставлен HTML-академией"></a>
-
-                        <a href="yoga/yoga.html" target="_blank"> <img src="img/yoga.PNG" alt=""
-                                title="шаблон для тренировки был предоставлен HTML-академией"></a>
-
-
-                        <a href="mestore/MeStore.html" target="_blank"><img src="img/mestore.PNG" alt=""
-                                title="шаблон для тренировки был предоставлен HTML-академией"></a>
-
-
-                    </div>
-                    <div class="buttons">
-                        <button type='submit' class="prev"></button>
-                        <button type="submit" class="next"></button>
-                    </div>
                 </div>
+                <div class="header__gradient">
+                    <h1 class="header__title">Brand New Site<br>
+                        Beyond Ordinary</h1>
 
+                    <nav class="header__calendar">
+                        <a href="index.html" class="header__home link">home</a>
+                        <a href="inner.html" class="header__about link" target="_blank">about</a>
+                        <a href="portfolio.html" class="header__exemple link" target="_blank">portfolio</a>
+                        <a href="articles.html" class="header__writes link" target="_blank">notes</a>
+                        <a href="#" class="header__guests link" target="_blank">guests</a>
+                    </nav>
+                </div>
             </div>
+        </header>
+        <div class="content-block">
+          <div class="content-notes">
+            <h2>My portfolio</h2>
+            <h3>Примеры верстки по макетам PSD</h3>
+            <div class="galery">
+               <div class="photos">
+                     
+                   <a href="invite/indexINV.html" target="_blank"><img src="img/invite.PNG" alt="" title="simple page" class="photos-active"> </a>
+                   
+                   <a href="desktop/pex.html" target="_blank"> <img src="img/pex.PNG" alt="" title="шаблон для тренировки был предоставлен HTML-академией"></a>
+                     
+                   <a href="yoga/yoga.html" target="_blank"> <img src="img/yoga.PNG" alt="" title="шаблон для тренировки был предоставлен HTML-академией"></a>
+                    
+                  
+                   <a href="mestore/MeStore.html" target="_blank"><img src="img/mestore.PNG" alt="" title="шаблон для тренировки был предоставлен HTML-академией"></a>
+                   
+                 
+                 </div>
+                 <div class="buttons">
+                     <button type='submit' class="prev"></button>
+                     <button type="submit" class="next"></button>
+               </div>
+               </div> 
+            
         </div>
+      </div>
 
-        <footer id="footer"></footer>
+          <footer class="footer">
+            <div class="footer__wrapper">
+
+                <nav class="contacts">
+                    Напишите мне:
+                    <a href="https://e.mail.ru/compose/?to=belka-ld@bk.ru" target="blank">e-mail</a>
+                    <a href="https://e.mail.ru/compose/?to=pessimist2010@yandex.ru" target="_blank">emergensy e-mail</a>
+                </nav>
+                <nav class="otherContacts"> Позвоните мне:
+                    <a href="#">phone number</a>
+                    <a href="#">Linkedin</a>
+                </nav>
+                <nav class="sprite">
+                    Свяжитесь со мной в сосетях:
+                    <a href="https://www.facebook.com/profile.php?id=100001708756418">facebook</a>
+                    <a href="#">twitter</a>
+                </nav>
+                <nav class="meMedia">
+                    И здесь я тоже есть:
+                    <a href="#">youtube</a>
+                    <a href="#">instagramm</a>
+                </nav>
+            </div>
+
+
+        </footer>
     </div>
-    <script>
-        fetch('./header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header').innerHTML = data;
-            })
-            .catch(error => console.error('Ошибка загрузки шапки:', error));
-
-        fetch('./footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer').innerHTML = data;
-            })
-            .catch(error => console.error('Ошибка загрузки footer:', error));
-    </script>
     <script src="b.js"></script>
-</body>
+  </body>
 
 </html>
