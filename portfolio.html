@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="ru">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>portfolio</title>
     <link rel="icon" href="img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
-  </head>
+</head>
 
-  <body>
-<div class="container">
+<body>
+    <div class="container">
         <header class="header">
             <div class="header__picture">
                 <div class="header__slider">
@@ -35,33 +35,37 @@
             </div>
         </header>
         <div class="content-block">
-          <div class="content-notes">
-            <h2>My portfolio</h2>
-            <h3>Примеры верстки по макетам PSD</h3>
-            <div class="galery">
-               <div class="photos">
-                     
-                   <a href="invite/indexINV.html" target="_blank"><img src="img/invite.PNG" alt="" title="simple page" class="photos-active"> </a>
-                   
-                   <a href="desktop/pex.html" target="_blank"> <img src="img/pex.PNG" alt="" title="шаблон для тренировки был предоставлен HTML-академией"></a>
-                     
-                   <a href="yoga/yoga.html" target="_blank"> <img src="img/yoga.PNG" alt="" title="шаблон для тренировки был предоставлен HTML-академией"></a>
-                    
-                  
-                   <a href="mestore/MeStore.html" target="_blank"><img src="img/mestore.PNG" alt="" title="шаблон для тренировки был предоставлен HTML-академией"></a>
-                   
-                 
-                 </div>
-                 <div class="buttons">
-                     <button type='submit' class="prev"></button>
-                     <button type="submit" class="next"></button>
-               </div>
-               </div> 
-            
-        </div>
-      </div>
+            <div class="content-notes">
+                <h2>My portfolio</h2>
+                <h3>Примеры верстки по макетам PSD</h3>
+                <div class="galery">
+                    <div class="photos">
 
-          <footer class="footer">
+                        <a href="invite/indexINV.html" target="_blank"><img src="img/invite.PNG" alt=""
+                                title="simple page" class="photos-active"> </a>
+
+                        <a href="desktop/pex.html" target="_blank"> <img src="img/pex.PNG" alt=""
+                                title="шаблон для тренировки был предоставлен HTML-академией"></a>
+
+                        <a href="yoga/yoga.html" target="_blank"> <img src="img/yoga.PNG" alt=""
+                                title="шаблон для тренировки был предоставлен HTML-академией"></a>
+
+
+                        <a href="mestore/MeStore.html" target="_blank"><img src="img/mestore.PNG" alt=""
+                                title="шаблон для тренировки был предоставлен HTML-академией"></a>
+
+
+                    </div>
+                    <div class="buttons">
+                        <button type='submit' class="prev"></button>
+                        <button type="submit" class="next"></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
             <div class="footer__wrapper">
 
                 <nav class="contacts">
@@ -89,6 +93,11 @@
         </footer>
     </div>
     <script src="b.js"></script>
-  </body>
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
 
 </html>
