@@ -1,12 +1,9 @@
 #Visitcard
 
-It's just a simple projec about me and my skills. It's like portfolio for employer
-I like HTML, CSS, Javaskript and programming in particular.
-I can't say I at the beginning of the journey, but I work hard for make my softskills better
+"It's a simple portfolio project showcasing my skills. I enjoy working with HTML, CSS, JavaScript, and programming in general. I wouldn't say I'm at the very beginning of my journey, but I'm continuously working on improving my soft skills.
 
-In this project I used HTML5, CSS3, Javascript.
-My project is mobile friendly (you can see)
+For this project, I used HTML5, CSS3, and JavaScript. It's fully mobile-friendly, as you can see.
 
-I plan to add page for guests (feedback) and blog for guests
+I'm planning to add a guest feedback page and a blog section for visitors.
 
-May be I will add some tutorials features
+I might also include some tutorial-style features in the future."
