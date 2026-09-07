@@ -146,34 +146,14 @@
             </section>
         </main>
 
-        <footer class="footer">
-            <div class="footer__wrapper">
+       <footer id="footer"></footer>
 
-                <nav class="contacts">
-                    Напишите мне:
-                    <a href="https://e.mail.ru/compose/?to=belka-ld@bk.ru" target="blank">e-mail</a>
-                    <a href="https://e.mail.ru/compose/?to=pessimist2010@yandex.ru" target="_blank">emergensy e-mail</a>
-                </nav>
-                <nav class="otherContacts"> Позвоните мне:
-                    <a href="#">phone number</a>
-                    <a href="#">Linkedin</a>
-                </nav>
-                <nav class="sprite">
-                    Свяжитесь со мной в сосетях:
-                    <a href="https://www.facebook.com/profile.php?id=100001708756418">facebook</a>
-                    <a href="#">twitter</a>
-                </nav>
-                <nav class="meMedia">
-                    И здесь я тоже есть:
-                    <a href="#">youtube</a>
-                    <a href="https://www.instagram.com/belkald/">instagramm</a>
-                </nav>
-            </div>
-
-
-        </footer>
     </div>
-    <!--    <script src="b.js"></script>-->
+   <script>
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(data => document.getElementById('footer').innerHTML = data);
+</script>
 </body>
 
 </html>
