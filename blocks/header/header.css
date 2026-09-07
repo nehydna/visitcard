@@ -2,9 +2,12 @@
     width: 100%;
      position: relative;
     overflow-y: hidden;
+      background: linear-gradient(to right, rgba(87, 118, 136, 0.5), rgba(175, 141, 112, 0.5));
+    z-index: 20;
 }
 .header__slider {
     position: relative;
+    width: 100%;
  }
 .header img:nth-child(1),
 .header img:nth-child(2),
@@ -15,7 +18,7 @@
     height: inherit;
     top: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 0;
     opacity: 0;
     animation-name: slides;
     animation-duration: 24s;
@@ -67,17 +70,17 @@
 .header__gradient {
      position: relative;
     width: 100%;
-    height: 100%;
+    height: inherit;
     top: 0;
     right:0;
-    padding: 5% 0;
+    padding: 4% 0;
     background: linear-gradient(to right, rgba(87, 118, 136, 0.5), rgba(175, 141, 112, 0.5));
     box-sizing: border-box;
     z-index: 5;
 }
 
 .header__title {
-     font-family: "open-sans";
+     font-family: gilda-display;
     font-size: 4em;
     color: white;
     width: 50%;
@@ -108,3 +111,42 @@
     color: #fff;
     transition: 0.5s;
 }
+
+@media screen and (max-width: 1024px) {
+    .header__title {
+        width: 100%;
+        font-size: 2.5em;
+    }
+    .header__calendar {
+        width: 90%;
+    }
+    .link {
+        font-size: 20px;
+         width: 15%;
+    }
+    .link:nth-child(5) {
+        display: none;
+    }
+}
+     
+@media screen and (max-width: 700px) {
+    .header__title {
+        font-size: 2.2em;
+    }
+    .link {
+        padding: 3%;
+        font-size: 18px;
+    }
+}
+  
+     
+@media screen and (max-width: 580px) {
+    .header__title {
+        font-size: 2em;
+    }
+    .link {
+        padding: 2%;
+        font-size: 18px;
+    }
+}
+    

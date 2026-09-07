@@ -10,7 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
-   
+   font-family: gilda-display;
 }
 .content-block__image {
     width: 50%;

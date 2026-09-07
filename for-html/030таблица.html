@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled Document</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, .page, aside, footer {
+      border: solid 1px grey;
+      padding: 5px;
+      background-color: bisque;
+    }
+    .table, main {
+      display: table;
+      width: 100%;
+      height: 100%;
+      border-spacing: 10px;
+    }
+    header, footer {
+      display: table-row;
+      height: 1px;
+    }
+    nav, .page, aside {
+      display: table-cell;
+    }
+    nav {
+      width: 100px;
+    }
+    aside {
+      width: 150px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="table">
+<header>Заголовок сайта</header>
+<main>
+  <nav>Меню пример длинного текстa</nav>
+  <div class="page">Содержимое страницы</div>
+  <aside>Боковая колонка</aside>
+</main>
+<footer>Авторские права</footer>
+</div>
+</body>
+</html>

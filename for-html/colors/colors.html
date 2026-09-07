@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    main {
+      width: 1200px;
+      border: solid 3px #000;
+      margin: 10px auto;
+    }
+    main h1 {
+      font-family: sans-serif;
+      text-align: center;
+      margin: 10px;
+    }
+    .colors-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .rgb-colors, .rgb-synth {
+      border-right: solid 3px #000;
+    }
+    .rgb-colors, .hsl-colors, .rgb-synth, .hsl-synth {
+      box-sizing: border-box;
+      padding: 10px 10px;
+      border-top: solid 1px #999;
+      flex-basis: 600px;
+    }
+    .rgb-synth span {
+      display: inline-block;
+      width: 10ex;
+    }
+    #rgb-synth-sample, #hsl-synth-sample {
+      width: 250px;
+      height: 150px;
+      border: solid 1px #999;
+      margin: 20px auto;
+      background-color: #000;
+    }
+    #show-rgb, #show-hsl {
+      width: 460px;
+      margin: 0 auto;
+      font-size: 27px;
+    }
+    .red-container, .green-container, .blue-container {
+      width: 460px;
+      margin: 0 auto;
+    }
+    .rgb-synth img {
+      float: left;
+      margin-right: 20px;
+    }
+    #colorwheel {
+      overflow: hidden;
+      position: relative;
+      width: 351px;
+      margin: 10px auto;
+    }
+    #color-point {
+      display: block;
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      left: 170px;
+      top: 167px;
+      border: solid 3px #000;
+      border-radius: 50%;
+      z-index: 5;
+    }
+    .hue-container, .saturation-container, .lightness-container {
+      width: 480px;
+      margin: 0 auto;
+    }
+    .hsl-synth span {
+      display: inline-block;
+      width: 14ex;
+    }
+    input[type=range] {
+      width: 350px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Синтез цвета</h1>
+    <div class="colors-container">
+      <div class="rgb-colors">
+        <p>RGB означает Red - Green - Blue (красный, зеленый, синий). Это физическая модель синтеза
+           (аддитивный или сложение), то есть имеет воплощение в реальном мире. Так работают все
+           светоизлучающие приборы (телевизоры, проекторы, компьютерные мониторы, экраны мобильных
+           телефонов и планшетов).</p>
+        <img src="img/lcd.png">
+        <img src="img/oled.png">
+        <p>Так выглядят при большом увеличении экраны, основанные на двух основных на данный момент
+           типах матриц: LCD и OLED.</p>
+      </div>
+      <div class="hsl-colors">
+        <p>HSL означает Hue - Saturation - Lightness (оттенок, насыщенность, яркость). Не существует
+           изображений, использующих эту цветовую модель, но это довольно удобный и понятный способ
+           выбора цвета, например для рисования, для веб-дизайна и т.д. Например, стандартное окно
+           из простейшего графического редактора Paint операционной системы Windows.</p>
+        <p>Цветовой круг иногда рисуют с одинаковой насыщенностью и в центре и по краям, иногда - 
+           по краям будут яркие оттенки, а чем ближе к центру, тем бледнее (в данном случае так и
+           сделано). В HSL-модели первое значение означает поворот цветового круга на нужный угол.
+           Например 0 градусов - это красный цвет, 30 - пурпурный, 60 - синий, 90 - голубой и т. д.
+           Насыщенность и яркость измеряются в процентах. Обратите внимание, что максимальную
+           насыщенность цвета можно получить, поставив движок яркости на 50%. </p>
+      </div>
+
+      <div class="rgb-synth">
+        <p>
+          <img src="img/colorwheel-rgb5.png">
+          И в RGB и в HSL используется понятие цветового круга, но по разному. Для RGB мы смотрим
+          на три базовых цвета. Смешивание их дает еще три цвета: красный + синий = пурпурный,
+          синий + зеленый = голубой, зеленый + красный = желтый. Смотрите на линии, соединяющие цвета.
+          Аддитивный метод подразумевает свечение, если ни одна точка не светится, получаем черный.
+          Если светятся все три точки на максимуме яркости (уровень 255), получаем белый. Если все три
+          базовых цвета одинаковой яркости, но между 0 и 255 - получаем оттенки серого. Попробуйте сами
+          на движках ниже.
+        </p>
+        <div id="rgb-synth-sample"></div>
+        <div id="show-rgb">
+          background-color: rgb(<output id="red-out">0</output>,
+          <output id="green-out">0</output>, <output id="blue-out">0</output>)
+        </div>
+        <div class="red-container">
+          <span>Красный</span>
+          <input type="range" value="0" min="0" max="255" id="color-red" oninput="inputRed()">
+        </div>
+        <div class="green-container">
+          <span>Зеленый</span>
+          <input type="range" value="0" min="0" max="255" id="color-green" oninput="inputGreen()">
+        </div>
+        <div class="blue-container">
+          <span>Синий</span>
+          <input type="range" value="0" min="0" max="255" id="color-blue" oninput="inputBlue()">
+        </div>
+      </div>
+
+      <div class="hsl-synth">
+        <div id="hsl-synth-sample"></div>
+        <div id="show-hsl">
+          background-color: hsl(<output id="hue-out">0</output>,
+          <output id="saturation-out">0</output>%, <output id="lightness-out">0</output>%)
+        </div>
+        <div id="colorwheel">
+          <img src="img/colorwheel5.png" id="wheel" width="351" height="351">
+          <span id="color-point"></span>
+        </div>
+        <div class="hue-container">
+          <span>Оттенок</span>
+          <input type="range" min="0" max="180" value="0" id="input-hue" oninput="wheelrotate()">
+        </div>
+        <div class="saturation-container">
+          <span>Насыщенность</span>
+          <input type="range" min="0" max="100" value="0" id="input-saturation" oninput="inputSaturation()">
+        </div>
+        <div class="lightness-container">
+          <span>Яркость</span>
+          <input type="range" min="0" max="100" value="0" id="input-lightness" oninput="inputLightness()">
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+
+</body>
+  <script>
+    var r = g = b = h = s = l = 0;
+    function inputRed() {
+      r = document.getElementById('color-red').value;
+      document.getElementById('red-out').value = r;
+      document.getElementById('rgb-synth-sample').style.backgroundColor = 'rgb(' + r + ',' + g +',' + b + ')';
+    }
+    function inputGreen() {
+      g = document.getElementById('color-green').value;
+      document.getElementById('green-out').value = g;
+      document.getElementById('rgb-synth-sample').style.backgroundColor = 'rgb(' + r + ',' + g +',' + b + ')';
+    }
+    function inputBlue() {
+      b = document.getElementById('color-blue').value;
+      document.getElementById('blue-out').value = b;
+      document.getElementById('rgb-synth-sample').style.backgroundColor = 'rgb(' + r + ',' + g +',' + b + ')';
+    }
+    function wheelrotate() {
+      h = document.getElementById('input-hue').value * 2;
+      document.getElementById('hue-out').value = h;
+      document.getElementById('wheel').style.transform = 'rotate(' + h + 'deg)';
+      document.getElementById('hsl-synth-sample').style.backgroundColor = 'hsl(' + h + ',' + s +'%,' + l + '%)';
+    }
+    function inputSaturation() {
+      s = document.getElementById('input-saturation').value;
+      document.getElementById('saturation-out').value = s;
+      document.getElementById('hsl-synth-sample').style.backgroundColor = 'hsl(' + h + ',' + s +'%,' + l + '%)';
+      document.getElementById('color-point').style.transform = 'translateY('+ -s * 1.75 + 'px)';
+    }
+    function inputLightness() {
+      l = document.getElementById('input-lightness').value;
+      document.getElementById('lightness-out').value = l;
+      document.getElementById('hsl-synth-sample').style.backgroundColor = 'hsl(' + h + ',' + s +'%,' + l + '%)';
+    }
+  </script>
+</html>

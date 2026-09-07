@@ -1,0 +1,8 @@
+Beautify - автоматическое форматирование кода
+Brackets Icons - значки файлов
+HTML Templates - шаблоны документов
+Brackets Color Picker - выбор цвета из палитры
+colorHints - показывает цвет при наведении (в том числе градиенты)
+emmet - аббривеатуры
+Indent Guides - линии отступов
+

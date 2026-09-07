@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled Document</title>
+  <style>
+    header, nav, .page, aside, footer {
+      border: solid 1px grey;
+      padding: 5px;
+      background-color: bisque;
+    }
+    nav {
+      float: left;
+      width: 100px;
+    }
+    aside {
+      float: right;
+      width: 150px;
+    }
+    .page {
+      margin-left: 110px;
+      margin-right: 160px;
+    }
+    main:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+<header>Заголовок сайта</header>
+<main>
+  <nav>Меню пример длинного текста</nav>  
+  <aside>Боковая колонка</aside>
+  <div class="page">Содержимое страницы</div>
+</main>
+<footer>Авторские права</footer>
+</body>
+</html>

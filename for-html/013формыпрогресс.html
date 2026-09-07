@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled Document</title>
+</head>
+
+<body>
+<h1>Элементы форм HTML5</h1>
+<h3>Выбор цвета</h3>
+<input type="color">
+<h3>Выбор даты</h3>
+<input type="date">
+<h3>Ввод числа</h3>
+<input type="number" min="10" max="50" step="5">
+<h3>Ввод чисел с помощью движка</h3>
+2 <input type="range" min="2" max="20" step="2" oninput="document.getElementById('out').value=this.value"> 20 текущее значение <output id="out">10</output>
+<h3>Полоса прогресса</h3>
+<progress  max="100" value="77"></progress>
+<h3>Комбо-список</h3>
+<input type="text" list="list">
+<datalist id="list">
+  <option value="Орехово-Зуево"></option>
+  <option value="Ликино-Дулево"></option>
+  <option value="Дрезна"></option>
+  <option value="Бостон"></option>
+</datalist>
+<h3>Индикатор уровня</h3>
+<meter min="0" max="100" low="20" high="50" optimum="37" value="37"></meter>
+</body>
+</html>

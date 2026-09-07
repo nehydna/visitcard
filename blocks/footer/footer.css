@@ -8,6 +8,7 @@
 }
 .footer__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 90%;
     margin: auto;
@@ -19,6 +20,7 @@
 .meMedia {
     display: flex;
     flex-direction: column;
+    width: 25%;
     font-size: 1.3em;
     line-height: 40px;
 }
@@ -30,36 +32,34 @@
     line-height: 40px;
     
 }
-
-@media screen and (max-width: 550px) {
-    .footer {
-    flex-wrap: wrap;
-     font-size: 90%;
+@media screen and (max-width: 1024px) {
+    .footer nav {
+         font-size: 1.1em;
     }
-    .meMedia, 
-    .sprite, 
-    .otherContacts, 
-    .contacts {
-        width: 100%;
-    }
- 
 }
 
-@media screen and (min-width: 550px) and (max-width: 650px) {
-    .footer {
-    flex-wrap: wrap;
-     font-size: 90%;
+@media screen and (max-width: 850px) {
+    .footer nav a {
+        font-size: 1em;
     }
     .meMedia {
         width: 100%;
     }
 }
-@media screen and (min-width: 1550px) {
-    footer {
-        font-size: 2em;
-        line-height: 40px;
+
+
+@media screen and (max-width: 650px) {
+   
+    .meMedia, 
+    .sprite, 
+    .otherContacts, 
+    .contacts {
+        width: 100%;
+        font-size: 1.2em;
     }
+ 
 }
+
 
 .footer nav a:hover {
     transition-duration: 1s;
